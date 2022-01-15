@@ -184,5 +184,5 @@ bar {
 bindsym $mod+m bar mode toggle
 
 # Set wallpapers
-exec --no-startup-id feh --randomize --bg-fill ~/Pictures/Wallpapers/*
+exec --no-startup-id ~/.fehbg
 
