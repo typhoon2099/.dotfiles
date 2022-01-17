@@ -10,7 +10,7 @@ set noswapfile
 
 " Indentation
 set tabstop=4 softtabstop=4
-set shiftwidth=4
+set shiftwidth=2
 set expandtab
 set smartindent
 set shiftround
