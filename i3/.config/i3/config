@@ -175,31 +175,39 @@ mode "resize" {
 
 ## Low Chrome
 hide_edge_borders both
-default_border normal 1
+default_border normal 0
+
+# Colours
+set $black #251c1f
+set $pink #dd95ad
+set $grey #797979
 
 # Status Bar
 bar {
   status_command i3status
   position top
   font pango:Hack 11
+  colors {
+    background $black
+    focused_workspace $pink $pink $black
+    active_workspace #ff0000 #ff0000 #ff0000
+    inactive_workspace $black $black $pink
+    urgent_workspace #0000ff #0000ff #0000ff
+    binding_mode #ffffff #ffffff #ffffff
+  }
 }
 
 bindsym $mod+m bar mode toggle
 
+# class                 border  backg.  text
+client.focused          $black   $black   $pink
+client.focused_inactive $black   $black   $grey
+client.unfocused        $black   $black   $grey
+client.urgent           $black   $pink    $black
+client.placeholder      $black   $black   $grey
+
+client.background $black
+
 # Set wallpapers
 exec --no-startup-id ~/.fehbg
 
-# Colours
-set $back #0d0003
-set $text #ffd1dc
-set $text_inactive #ff0000
-set $text_unfocused #0000ff
-
-# class                 border  backg.  text    indic.  child border
-client.focused          $back   $back   $text   #ffff00 #00ffff
-client.focused_inactive $back   $back   $text_inactive   #ffff00 #00ffff
-client.unfocused        $back   $back   $text_unfocused   #ffff00 #00ffff
-client.urgent           $back   $back   $text   #ffff00 #00ffff
-client.placeholder      $back   $back   $text   #ffff00 #00ffff
-
-client.background $back
