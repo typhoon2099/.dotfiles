@@ -4,4 +4,3 @@ let &packpath=&runtimepath
 source ~/.vimrc
 
 lua require'lspconfig'.rust_analyzer.setup{}
-lua require('rust-tools').setup({})

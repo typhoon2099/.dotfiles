@@ -29,26 +29,24 @@ filetype plugin indent on
 
 " TODO: Some of this stuff needs to go into NeoVim init
 call plug#begin()
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'editorconfig/editorconfig-vim'
-"Plug 'vim-syntastic/syntastic'
 
 " LSP
 Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-lua/lsp_extensions.nvim'
 
 " Completion Stuff
-Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-vsnip'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh6th/cmp-buffer'
-
-" Rust Stuff
-Plug 'rust-lang/rust.vim'
-Plug 'simrat39/rust-tools.nvim'
+"Plug 'hrsh7th/nvim-cmp'
+"Plug 'hrsh7th/cmp-nvim-lsp'
+"Plug 'hrsh7th/cmp-vsnip'
+"Plug 'hrsh7th/cmp-path'
+"Plug 'hrsh6th/cmp-buffer'
 
 " Svelte Stuff
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
+
+" Rust Stuff
+Plug 'rust-lang/rust.vim'
 
 " Ruby Stuff
 Plug 'ngmy/vim-rubocop'
@@ -56,3 +54,6 @@ call plug#end()
 
 " Completion options
 set completeopt=menu,menuone,noselect
+
+" Inlay hints for Rust
+autocmd InsertLeave,BufEnter,BufWinEnter,TabEnter,BufWritePost,CursorHold *.rs :lua require'lsp_extensions'.inlay_hints{ prefix = ' » ', highlight = "NonText", enabled = {"ChainingHint"} }
