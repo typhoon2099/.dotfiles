@@ -87,9 +87,12 @@ lua <<EOF
       },
     },
   }
+
   lspconfig.solargraph.setup{
     capabilities = capabilities,
   }
+
+  lspconfig.svelte.setup{}
 EOF
 
 " Colour Options
