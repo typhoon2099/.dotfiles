@@ -50,10 +50,18 @@ Plug 'rust-lang/rust.vim'
 
 " Ruby Stuff
 Plug 'ngmy/vim-rubocop'
+
+" Colour Stuff
+Plug 'haystackandroid/strawberry'
+
 call plug#end()
 
 " Completion options
 set completeopt=menu,menuone,noselect
+
+" Colour Options
+set termguicolors
+colorscheme strawberry-dark
 
 " Inlay hints for Rust
 autocmd InsertLeave,BufEnter,BufWinEnter,TabEnter,BufWritePost,CursorHold *.rs :lua require'lsp_extensions'.inlay_hints{ prefix = ' » ', highlight = "NonText", enabled = {"ChainingHint", "TypeHint", "ParameterHint"} }
