@@ -96,6 +96,7 @@ lua <<EOF
 EOF
 
 " Colour Options
+set background=dark
 set termguicolors
 colorscheme strawberry-dark
 
