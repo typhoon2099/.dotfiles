@@ -6,7 +6,7 @@ neovim (0.5+)
 nm-applet
 feh
 plug vim
-rust-analyzer
+rust-analyzer (nightly)
 svelte-language-server (and thus node)
 
 # Scripts to consider adding
@@ -27,7 +27,6 @@ Vim CSS autocomplete
 Vim ESLint
 Vim Stylelint
 Vim Rubocop?
-Vim inline lint messages
 Vim quick commenting
 Vim tree sitter
 Vim git line change indicators
