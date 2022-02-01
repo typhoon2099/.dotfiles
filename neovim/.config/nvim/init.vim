@@ -123,8 +123,8 @@ lua <<EOF
 
   lspconfig.rust_analyzer.setup{
     on_attach = on_attach,
-    cmd = { "rustup", "run", "nightly", "rust-analyzer" },
     capabilities = capabilities,
+    cmd = { "rustup", "run", "nightly", "rust-analyzer" },
     settings = {
       ["rust-analyzer"] = {
         checkOnSave = {
@@ -141,6 +141,7 @@ lua <<EOF
 
   lspconfig.svelte.setup{
     on_attach = on_attach,
+    capabilities = capabilities,
   }
 EOF
 
