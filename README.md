@@ -21,6 +21,7 @@ i3 brightness and other function keys
 i3 status bar options (what to display etc)
 i3 status bar emoji
 i3 Cycle workspaces
+i3 Fix KDE/Gnome theming
 Vim telescope
 vim-fugitive
 Vim emmet
@@ -31,10 +32,8 @@ Vim Rubocop?
 vim-commentary
 Vim tree sitter
 Vim git line change indicators
-Vim Rust crate management
-Vim Svelte language server
 vim-test
 vim-rails
 
-## NEXT
-CMP Snippet
+## Next
+i3 Resize mode
