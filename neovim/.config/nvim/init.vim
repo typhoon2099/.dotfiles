@@ -24,6 +24,8 @@ call plug#begin()
 
   " Rust Stuff
   Plug 'rust-lang/rust.vim'
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'Saecki/crates.nvim'
 
   " Ruby Stuff
   Plug 'ngmy/vim-rubocop'
@@ -58,6 +60,7 @@ lua <<EOF
     sources = cmp.config.sources({
       { name = 'nvim_lsp' },
       { name = 'vsnip' },
+      { name = "crates" },
     }, {
       { name = 'buffer' },
     })
@@ -151,6 +154,8 @@ lua <<EOF
     on_attach = on_attach,
     capabilities = capabilities,
   }
+
+  require('crates').setup()
 EOF
 
 " Colour Options
