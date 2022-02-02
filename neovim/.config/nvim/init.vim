@@ -14,8 +14,10 @@ call plug#begin()
   Plug 'hrsh7th/nvim-cmp'
   Plug 'hrsh7th/cmp-nvim-lsp'
   Plug 'hrsh7th/cmp-path'
-  Plug 'hrsh6th/cmp-buffer'
+  Plug 'hrsh7th/cmp-buffer'
   Plug 'hrsh7th/cmp-cmdline'
+  Plug 'hrsh7th/vim-vsnip'
+  Plug 'hrsh7th/cmp-vsnip'
 
   " Svelte Stuff
   Plug 'evanleck/vim-svelte', {'branch': 'main'}
@@ -37,6 +39,11 @@ lua <<EOF
   local cmp = require'cmp'
 
   cmp.setup({
+    snippet = {
+      expand = function(args)
+        vim.fn["vsnip#anonymous"](args.body)
+      end,
+    },
     mapping = {
       ['<C-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
       ['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
@@ -50,6 +57,7 @@ lua <<EOF
     },
     sources = cmp.config.sources({
       { name = 'nvim_lsp' },
+      { name = 'vsnip' },
     }, {
       { name = 'buffer' },
     })

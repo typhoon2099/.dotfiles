@@ -8,6 +8,7 @@ feh
 plug vim
 rust-analyzer (nightly)
 svelte-language-server (and thus node)
+Starship
 
 # Scripts to consider adding
 .xprofile (sets KDE styling)
@@ -15,7 +16,6 @@ svelte-language-server (and thus node)
 
 ## TODO
 install script
-Starship
 i3 brightness and other function keys
 i3 status bar options (what to display etc)
 i3 status bar emoji
@@ -32,3 +32,6 @@ Vim tree sitter
 Vim git line change indicators
 Vim Rust crate management
 Vim Svelte language server
+
+## NEXT
+CMP Snippet
