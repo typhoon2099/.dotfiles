@@ -19,7 +19,8 @@ call plug#begin()
   Plug 'hrsh7th/vim-vsnip'
   Plug 'hrsh7th/cmp-vsnip'
 
-  " Svelte Stuff
+  " Javascript Stuff
+  Plug 'rajasegar/vim-pnpm'
   Plug 'evanleck/vim-svelte', {'branch': 'main'}
 
   " Rust Stuff
@@ -165,3 +166,6 @@ colorscheme strawberry-dark
 
 " Inlay hints for Rust
 autocmd InsertLeave,BufEnter,BufWinEnter,TabEnter,BufWritePost,CursorHold *.rs :lua require'lsp_extensions'.inlay_hints{ prefix = ' » ', highlight = "Comment", enabled = {"ChainingHint", "TypeHint", "ParameterHint"} }
+
+map <space>pi :PnpmInstall<CR>
+map <space>pt :PnpmTest<CR>
