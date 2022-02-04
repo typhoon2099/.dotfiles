@@ -9,6 +9,7 @@ plug vim
 rust-analyzer (nightly)
 svelte-language-server (and thus node)
 Starship
+TMux
 
 # Scripts to consider adding
 .xprofile (sets KDE styling)
