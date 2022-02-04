@@ -33,6 +33,9 @@ call plug#begin()
 
   " Colour Stuff
   Plug 'haystackandroid/strawberry'
+
+  " Git Stuff
+  Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 set completeopt=menu,menuone,noselect

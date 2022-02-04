@@ -21,17 +21,19 @@ i3 status bar options (what to display etc)
 i3 status bar emoji
 i3 Cycle workspaces
 Vim telescope
-Vim look into fugitive
+vim-fugitive
 Vim emmet
 Vim CSS autocomplete
 Vim ESLint
 Vim Stylelint
 Vim Rubocop?
-Vim quick commenting
+vim-commentary
 Vim tree sitter
 Vim git line change indicators
 Vim Rust crate management
 Vim Svelte language server
+vim-test
+vim-rails
 
 ## NEXT
 CMP Snippet
