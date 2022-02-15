@@ -5,6 +5,9 @@ source ~/.vimrc
 
 call plug#begin()
   Plug 'editorconfig/editorconfig-vim'
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+  Plug 'nvim-telescope/telescope.nvim'
 
   " LSP
   Plug 'neovim/nvim-lspconfig'
@@ -25,7 +28,6 @@ call plug#begin()
 
   " Rust Stuff
   Plug 'rust-lang/rust.vim'
-  Plug 'nvim-lua/plenary.nvim'
   Plug 'Saecki/crates.nvim'
 
   " Ruby Stuff
@@ -39,6 +41,18 @@ call plug#begin()
 call plug#end()
 
 set completeopt=menu,menuone,noselect
+
+" Telescope
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+
+nnoremap <leader>gc <cmd>lua require('telescope.builtin').git_commits()<cr>
+nnoremap <leader>gf <cmd>lua require('telescope.builtin').git_files()<cr>
+nnoremap <leader>gs <cmd>lua require('telescope.builtin').git_status()<cr>
+nnoremap <leader>gb <cmd>lua require('telescope.builtin').git_branches()<cr>
+nnoremap <leader>gbc <cmd>lua require('telescope.builtin').git_bcommits()<cr>
 
 lua <<EOF
 -- Setup nvim-cmp.

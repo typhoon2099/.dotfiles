@@ -1,13 +1,23 @@
 # Notes (to be expanded into proper docs)
 
 ## Required packages
+
+### i3
 i3
-neovim (0.5+)
 nm-applet
 feh
-plug vim
+
+### Neovim
+Neovim (0.5+)
+Plug Vim
 rust-analyzer (nightly)
 svelte-language-server (and thus node)
+
+#### For Telescope
+fd
+RipGrep
+
+### Terminal
 Starship
 TMux
 
