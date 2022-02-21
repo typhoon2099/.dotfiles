@@ -12,6 +12,7 @@ Neovim (0.5+)
 Plug Vim
 rust-analyzer (nightly)
 svelte-language-server (and thus node)
+Solargraph
 
 #### For Telescope
 fd
@@ -21,7 +22,7 @@ RipGrep
 Starship
 TMux
 
-# Scripts to consider adding
+## Scripts to consider adding
 .xprofile (sets KDE styling)
 .fehbg (sets wallpapers)
 
@@ -32,18 +33,14 @@ i3 status bar options (what to display etc)
 i3 status bar emoji
 i3 Cycle workspaces
 i3 Fix KDE/Gnome theming
-Vim telescope
+i3 Resize mode
 vim-fugitive
 Vim emmet
 Vim CSS autocomplete
 Vim ESLint
 Vim Stylelint
-Vim Rubocop?
 vim-commentary
-Vim tree sitter
-Vim git line change indicators
 vim-test
 vim-rails
 
 ## Next
-i3 Resize mode
