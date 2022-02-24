@@ -43,7 +43,7 @@ call plug#begin()
   Plug 'vim-test/vim-test'
 call plug#end()
 
-set completeopt=menu,menuone,noselect
+set completeopt=menu,menuone,preview
 
 " Telescope
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
