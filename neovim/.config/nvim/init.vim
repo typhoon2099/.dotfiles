@@ -38,6 +38,9 @@ call plug#begin()
 
   " Git Stuff
   Plug 'airblade/vim-gitgutter'
+
+  " Testing Stuff
+  Plug 'vim-test/vim-test'
 call plug#end()
 
 set completeopt=menu,menuone,noselect
@@ -184,5 +187,17 @@ colorscheme strawberry-dark
 " Inlay hints for Rust
 autocmd InsertLeave,BufEnter,BufWinEnter,TabEnter,BufWritePost,CursorHold *.rs :lua require'lsp_extensions'.inlay_hints{ prefix = ' » ', highlight = "Comment", enabled = {"ChainingHint", "TypeHint", "ParameterHint"} }
 
+" PNPM
 map <space>pi :PnpmInstall<CR>
 map <space>pt :PnpmTest<CR>
+
+" Vim Test
+
+let test#strategy = "neovim"
+let test#neovim#term_position = "vert belowright"
+
+nmap <silent> <leader>tn :TestNearest<CR>
+nmap <silent> <leader>tf :TestFile<CR>
+nmap <silent> <leader>ts :TestSuite<CR>
+nmap <silent> <leader>tl :TestLast<CR>
+nmap <silent> <leader>tt :TestVisit<CR>
