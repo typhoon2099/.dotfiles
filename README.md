@@ -40,7 +40,6 @@ Vim CSS autocomplete
 Vim ESLint
 Vim Stylelint
 vim-commentary
-vim-test
 vim-rails
 
 ## Next
