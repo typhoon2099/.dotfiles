@@ -1,16 +1,18 @@
+format = "($git_branch$git_commit$git_state$git_metrics$git_status)( | $ruby)( | $nodejs)( | $rust)( | $golang)( | $terraform)( | $package)( | $all)( | $cmd_duration)$line_break$directory$character"
 add_newline = false
+command_timeout = 2000
 
 [aws]
 disabled = true
 
-[cmd_duration]
-format = " | took [$duration]($style)"
+[git_branch]
+format = "[$symbol$branch]($style) "
 
 [git_metrics]
 disabled = false
 
 [git_status]
-format = '([\[$all_status$ahead_behind\]]($style) )'
+format = '([\[$all_status$ahead_behind\]]($style))'
 ahead = "↑$count"
 behind = "↓$count"
 diverged = "↑$ahead_count↓$behind_count"
@@ -18,21 +20,31 @@ modified = "!$count"
 untracked = "?$count"
 stashed = "\\$$count"
 
+[golang]
+format = "[$symbol( $version)($workspace)]($style)"
+symbol = "Go"
+version_format = "${raw}"
+
 [nodejs]
-format = " | [$symbol($version)]($style)"
-symbol = "Node "
+format = "[$symbol( $version)]($style)"
+symbol = "Node"
 version_format = "${raw}"
 
 [package]
-format = " | [$symbol($version)]($style)"
-symbol = "Version "
+format = "[$symbol( $version)]($style)"
+symbol = "Version"
 
 [ruby]
-format = " | [$symbol($version)]($style)"
-symbol = "Ruby "
+format = "[$symbol( $version)]($style)"
+symbol = "Ruby"
 version_format = "${raw}"
 
 [rust]
-format = " | [$symbol($version)]($style)"
-symbol = "Rust "
+format = "[$symbol( $version)]($style)"
+symbol = "Rust"
+
+[terraform]
+format = "[$symbol( $version)]($style)"
+symbol = "Terraform"
+version_format = "${raw}"
 
