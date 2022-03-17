@@ -52,7 +52,7 @@ format = "[$symbol( $version)]($style)"
 symbol = "Rust"
 
 [terraform]
-format = "[$symbol( $version)]($style)"
+format = "[$symbol( $version)( $workspace)]($style)"
 symbol = "Terraform"
 version_format = "${raw}"
 
