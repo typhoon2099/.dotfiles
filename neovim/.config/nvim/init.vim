@@ -41,6 +41,9 @@ call plug#begin()
 
   " Testing Stuff
   Plug 'vim-test/vim-test'
+
+  " Terraform Stuff
+  Plug 'hashivim/vim-terraform'
 call plug#end()
 
 set completeopt=menu,menuone,preview
@@ -172,6 +175,16 @@ lua <<EOF
   }
 
   lspconfig.svelte.setup{
+    on_attach = on_attach,
+    capabilities = capabilities,
+  }
+
+  lspconfig.terraformls.setup{
+    on_attach = on_attach,
+    capabilities = capabilities,
+  }
+
+  lspconfig.tflint.setup{
     on_attach = on_attach,
     capabilities = capabilities,
   }
