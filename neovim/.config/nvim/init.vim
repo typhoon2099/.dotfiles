@@ -8,6 +8,8 @@ call plug#begin()
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'nvim-telescope/telescope.nvim'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
 
   " LSP
   Plug 'neovim/nvim-lspconfig'
@@ -196,6 +198,10 @@ EOF
 set background=dark
 set termguicolors
 colorscheme strawberry-dark
+let g:airline_theme='bubblegum'
+
+" Powerline Fonts
+let g:airline_powerline_fonts = 1
 
 " Inlay hints for Rust
 autocmd InsertLeave,BufEnter,BufWinEnter,TabEnter,BufWritePost,CursorHold *.rs :lua require'lsp_extensions'.inlay_hints{ prefix = ' » ', highlight = "Comment", enabled = {"ChainingHint", "TypeHint", "ParameterHint"} }

@@ -13,6 +13,8 @@ Plug Vim
 rust-analyzer (nightly)
 svelte-language-server (and thus node)
 Solargraph
+terraformls
+tflint
 
 #### For Telescope
 fd
@@ -27,7 +29,7 @@ TMux
 .fehbg (sets wallpapers)
 
 ## TODO
-install script
+install script (Nix? Ansible?)
 i3 brightness and other function keys
 i3 status bar options (what to display etc)
 i3 status bar emoji
@@ -41,5 +43,7 @@ Vim ESLint
 Vim Stylelint
 vim-commentary
 vim-rails
+
+Unify colours across everything (X11 colours?)
 
 ## Next
