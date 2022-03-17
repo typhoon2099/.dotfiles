@@ -203,6 +203,10 @@ let g:airline_theme='bubblegum'
 " Powerline Fonts
 let g:airline_powerline_fonts = 1
 
+" Tabline at the top of Vim
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+
 " Inlay hints for Rust
 autocmd InsertLeave,BufEnter,BufWinEnter,TabEnter,BufWritePost,CursorHold *.rs :lua require'lsp_extensions'.inlay_hints{ prefix = ' » ', highlight = "Comment", enabled = {"ChainingHint", "TypeHint", "ParameterHint"} }
 
@@ -211,7 +215,6 @@ map <space>pi :PnpmInstall<CR>
 map <space>pt :PnpmTest<CR>
 
 " Vim Test
-
 let test#strategy = "neovim"
 let test#neovim#term_position = "vert belowright"
 
@@ -220,3 +223,7 @@ nmap <silent> <leader>tf :TestFile<CR>
 nmap <silent> <leader>ts :TestSuite<CR>
 nmap <silent> <leader>tl :TestLast<CR>
 nmap <silent> <leader>tt :TestVisit<CR>
+
+" Tab through buffers
+nmap <tab> :bnext<cr>
+nmap <S-tab> :bprevious<cr>
