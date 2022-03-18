@@ -48,7 +48,7 @@ call plug#begin()
   Plug 'hashivim/vim-terraform'
 call plug#end()
 
-set completeopt=menu,menuone,preview
+set completeopt=menu,menuone,preview,noselect
 
 " Telescope
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
@@ -81,7 +81,7 @@ lua <<EOF
         i = cmp.mapping.abort(),
         c = cmp.mapping.close(),
       }),
-      ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+      ['<CR>'] = cmp.mapping.confirm({ select = false }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
     },
     sources = cmp.config.sources({
       { name = 'nvim_lsp' },
@@ -225,5 +225,5 @@ nmap <silent> <leader>tl :TestLast<CR>
 nmap <silent> <leader>tt :TestVisit<CR>
 
 " Tab through buffers
-nmap <tab> :bnext<cr>
-nmap <S-tab> :bprevious<cr>
+nmap <silent> <tab> :bnext<cr>
+nmap <silent> <S-tab> :bprevious<cr>
