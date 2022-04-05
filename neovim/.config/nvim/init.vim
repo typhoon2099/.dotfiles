@@ -40,6 +40,7 @@ call plug#begin()
 
   " Git Stuff
   Plug 'airblade/vim-gitgutter'
+  Plug 'tpope/vim-fugitive'
 
   " Testing Stuff
   Plug 'vim-test/vim-test'

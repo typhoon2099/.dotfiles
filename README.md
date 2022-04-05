@@ -36,13 +36,13 @@ i3 status bar emoji
 i3 Cycle workspaces
 i3 Fix KDE/Gnome theming
 i3 Resize mode
-vim-fugitive
 Vim emmet
 Vim CSS autocomplete
 Vim ESLint
 Vim Stylelint
 vim-commentary
 vim-rails
+vim-surround/vim-sandwich
 
 Unify colours across everything (X11 colours?)
 
