@@ -39,7 +39,7 @@ call plug#begin()
   Plug 'haystackandroid/strawberry'
 
   " Git Stuff
-  Plug 'airblade/vim-gitgutter'
+  Plug 'mhinz/vim-signify'
   Plug 'tpope/vim-fugitive'
 
   " Testing Stuff
