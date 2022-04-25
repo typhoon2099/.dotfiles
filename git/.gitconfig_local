@@ -1,0 +1,33 @@
+[core]
+	editor = nvim
+	autocrlf = input
+	excludesFile = ~/.gitignore_global
+
+[commit]
+	gpgsign = true
+	verbose = true
+[gpg]
+	program = gpg
+
+[color]
+	ui = auto
+
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true
+[pull]
+	rebase = true
+[push]
+	default = current
+
+[merge]
+	tool = vimdiff
+[mergetool]
+	prompt = false
+	keepBackup = false
+[mergetool "vimdiff"]
+	path = nvim
+
+[alias]
+	tidyup = "!git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
