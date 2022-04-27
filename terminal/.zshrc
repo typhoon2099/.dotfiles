@@ -5,4 +5,6 @@ if [[ -f "$LOCAL_CONFIG" ]]; then
     source "$LOCAL_CONFIG"
 fi
 
+autoload -Uz compinit && compinit && compinit
+
 eval "$(starship init zsh)"
