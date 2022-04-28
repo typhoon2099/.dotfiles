@@ -63,6 +63,11 @@ nnoremap <leader>gs <cmd>lua require('telescope.builtin').git_status()<cr>
 nnoremap <leader>gb <cmd>lua require('telescope.builtin').git_branches()<cr>
 nnoremap <leader>gbc <cmd>lua require('telescope.builtin').git_bcommits()<cr>
 
+" Fugitive
+nnoremap <leader>cc <cmd>:G commit .<cr>
+nnoremap <leader>ca <cmd>:G commit . --amend<cr>
+nnoremap <leader>ce <cmd>:G commit . --amend --no-edit<cr>
+
 lua <<EOF
 -- Setup nvim-cmp.
   local cmp = require'cmp'
