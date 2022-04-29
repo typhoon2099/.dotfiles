@@ -1,6 +1,6 @@
 source ~/.bash_aliases
 
-LOCAL_CONFIG=~/.local_config.zsh
+LOCAL_CONFIG=~/.zshrc_local
 if [[ -f "$LOCAL_CONFIG" ]]; then
     source "$LOCAL_CONFIG"
 fi
