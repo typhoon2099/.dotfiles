@@ -1,0 +1,56 @@
+/*
+    Key Modifiers
+    ^ : Ctrl
+    $ : Shift
+    ~ : Option (Alt)
+    @ : Command (Apple)
+    # : Numeric Keypad
+
+    Non-Printable Key Codes
+
+    Up Arrow:     \UF700        Backspace:    \U007F        F1:           \UF704
+    Down Arrow:   \UF701        Tab:          \U0009        F2:           \UF705
+    Left Arrow:   \UF702        Escape:       \U001B        F3:           \UF706
+    Right Arrow:  \UF703        Enter:        \U000A
+    Insert:       \UF727        Page Up:      \UF72C
+    Delete:       \UF728        Page Down:    \UF72D
+    Home:         \UF729        Print Screen: \UF72E
+    End:          \UF72B        Scroll Lock:  \UF72F
+    Break:        \UF732        Pause:        \UF730
+    SysReq:       \UF731        Menu:         \UF735
+    Help:         \UF746
+*/
+
+{
+    "\UF729"  = moveToBeginningOfLine:; // Home
+    "\UF72B"  = moveToEndOfLine:;       // End
+    "$\UF729" = moveToBeginningOfLineAndModifySelection:; // shift-home
+    "$\UF72B" = moveToEndOfLineAndModifySelection:; // shift-end
+    "^\UF729" = moveToBeginningOfDocument:; // ctrl-home
+    "^\UF72B" = moveToEndOfDocument:; // ctrl-end
+    "^$\UF729" = moveToBeginningOfDocumentAndModifySelection:; // ctrl-shift-home
+    "^$\UF72B" = moveToEndOfDocumentAndModifySelection:; // ctrl-shift-end
+
+    "^c" = copy:;
+    "^x" = cut:;
+    "^v" = paste:;
+    "^a" = selectAll:;
+    "^z" = undo:;
+    "^Z" = redo:;
+
+    "^\UF702" = moveWordLeft:; // CTRL+Left
+    "^\UF703" = moveWordRight:; // CTRL+Right
+    "~\UF702" = moveToBeginningOfLine:; // ALT+Left
+    "~\UF703" = moveToEndOfLine:; // ALT+Right
+
+    "$^\UF702" = moveWordLeftAndModifySelection:; // Shift+CTRL+Left
+    "$^\UF703" = moveWordRightAndModifySelection:; // Shift+CTRL+Right
+    "$~\UF702" = moveToBeginningOfLineAndModifySelection:; // Shift+ALT+Left
+    "$~\UF703" = moveToEndOfLineAndModifySelection:; // Shift+ALT+Right
+
+    "^\U007F" = deleteWordBackward:; // CTRL+Backspace
+    "^\UF728" = deleteWordForward:; // CTRL+Delete
+    "~\U007F" = deleteToBeginningOfLine:; // ALT+Backspace
+    "~\UF728" = deleteToEndOfLine:; // ALT+Delete
+}
+
