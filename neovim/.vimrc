@@ -1,4 +1,5 @@
-"set termguicolors
+set background=dark
+set termguicolors
 set number
 set relativenumber
 set emoji
@@ -26,3 +27,9 @@ set updatetime=50
 " Enabled syntax highlighting
 syntax enable
 filetype plugin indent on
+
+set completeopt=menu,menuone,preview,noselect
+
+" Tab through buffers
+nmap <silent> <tab> :bnext<cr>
+nmap <silent> <S-tab> :bprevious<cr>
