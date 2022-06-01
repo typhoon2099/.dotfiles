@@ -68,4 +68,4 @@ map <space>pt :PnpmTest<CR>
 
 " Vim Test
 source ~/.config/nvim/vim-test.vim
-
+source ~/.config/nvim/vim-rubocop.vim
