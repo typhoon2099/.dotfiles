@@ -46,10 +46,10 @@
     "~\UF702" = moveToBeginningOfLine:; // ALT+Left
     "~\UF703" = moveToEndOfLine:; // ALT+Right
 
-    "$@\UF702" = moveWordLeftAndModifySelection:; // Shift+CTRL+Left
-    "$@\UF703" = moveWordRightAndModifySelection:; // Shift+CTRL+Right
-    "$~\UF702" = moveToBeginningOfLineAndModifySelection:; // Shift+ALT+Left
-    "$~\UF703" = moveToEndOfLineAndModifySelection:; // Shift+ALT+Right
+    "@$\UF702" = moveWordLeftAndModifySelection:; // Shift+CTRL+Left
+    "@$\UF703" = moveWordRightAndModifySelection:; // Shift+CTRL+Right
+    "~$\UF702" = moveToBeginningOfLineAndModifySelection:; // Shift+ALT+Left
+    "~$\UF703" = moveToEndOfLineAndModifySelection:; // Shift+ALT+Right
 
     "@\U007F" = deleteWordBackward:; // CTRL+Backspace
     "@\UF728" = deleteWordForward:; // CTRL+Delete
