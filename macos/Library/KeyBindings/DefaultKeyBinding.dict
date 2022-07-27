@@ -55,5 +55,8 @@
     "@\UF728" = deleteWordForward:; // CTRL+Delete
     "~\U007F" = deleteToBeginningOfLine:; // ALT+Backspace
     "~\UF728" = deleteToEndOfLine:; // ALT+Delete
+
+    "@\UF700" = selectWord:; // CTRL+Up
+    "@\UF701" = selectLine:; // CTRL+Down
 }
 
