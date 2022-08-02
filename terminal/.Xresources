@@ -1,38 +1,39 @@
-*.background: #251c1f
-*.foreground: #dd95ad
+! special
+*.foreground:   #dd95ad
+*.background:   #251c1f
+*.cursorColor:  #dd95ad
 
 ! black
-*.color0:       #ceb187
-*.color8:       #ceb187
+*.color0:       #3f3136
+*.color8:       #ddaabb
 
 ! red
-*.color1:       #a35e4e
-*.color9:       #a35e4e
+*.color1:       #dd4c4c
+*.color9:       #dd6e6e
 
 ! green
-*.color2:       #a35e4e
-*.color10:      #789ab0
+*.color2:       #71de4e
+*.color10:      #8bde6f
 
 ! yellow
-*.color3:       #ceb187
-*.color11:      #ceb187
+*.color3:       #de844b
+*.color11:      #debd6f
 
 ! blue
-*.color4:       #434e51
-*.color12:      #363e40
+*.color4:       #4e9bde
+*.color12:      #6fb1de
 
 ! magenta
-*.color5:       #7d8799
-*.color13:      #93cddc
+*.color5:       #bc4ede
+*.color13:      #c86fde
 
 ! cyan
-*.color6:       #5e8d87
-*.color14:      #8abeb7
+*.color6:       #4eded2
+*.color14:      #6fded3
 
 ! white
-*.color7:       #ea8d8d
-*.color15:      #cfd3db
-
+*.color7:       #4e9bde
+*.color15:      #64b1de
 
 *.faceName: Hack
 *.faceSize: 11
