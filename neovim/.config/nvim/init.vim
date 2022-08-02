@@ -36,7 +36,8 @@ call plug#begin()
   Plug 'ngmy/vim-rubocop'
 
   " Colour Stuff
-  Plug 'haystackandroid/strawberry'
+  Plug 'bringsrain/strawberry'
+  Plug 'ap/vim-css-color'
 
   " Git Stuff
   Plug 'mhinz/vim-signify'
