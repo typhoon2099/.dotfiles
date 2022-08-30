@@ -16,6 +16,12 @@ set expandtab
 set smartindent
 set shiftround
 
+" Folding
+set nofoldenable
+set foldmethod=syntax
+set foldcolumn=2
+set foldlevel=1
+
 set nowrap
 set colorcolumn=80
 set scrolloff=8
