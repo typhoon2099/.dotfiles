@@ -28,14 +28,16 @@ Config for i3-wm and i3-statusbar. Still a work in progress
 * feh
 * nm-applet (for managing network connections)
 * pactl (to control audio volume)
+* brightnessctl (to controll screen brightness)
 
 ### TODO
 
-* brightness and other function keys
+* Media buttons
 * status bar options (what to display etc)
 * status bar emoji
 * Cycle workspaces
 * Fix KDE/Gnome theming
+* Bluetooth management (maybe? Or just use command line)
 
 ## macos
 
