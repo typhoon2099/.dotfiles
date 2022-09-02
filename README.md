@@ -15,7 +15,7 @@ avoid it being commited
 ### Required Software
 
 - Git
-- Neovim
+- Neovim (for diff managing)
 
 ## i3
 
@@ -38,6 +38,7 @@ Config for i3-wm and i3-statusbar. Still a work in progress
 * Cycle workspaces
 * Fix KDE/Gnome theming
 * Bluetooth management (maybe? Or just use command line)
+* Add ~/.fehbg script (after making more generic visa vi file names)
 
 ## macos
 
@@ -51,7 +52,7 @@ properly (symlinking as per stow doesn't seem to work reliably).
 
 Text editor with lots of plugins for software development. A number of languages
 have been configured (Rust, Ruby, Svelte) using a number of plugins, all of
-which are manage by Plug Vim
+which are manage by Plug Vim.
 
 ### Required Software
 
@@ -83,25 +84,14 @@ currently just some colour settings, and is still a work in progress.
 ### Required Software
 
 * bash/zsh
-*
+* Starship
 
 ## tmux
 
-
-
-
-## Required packages
-
-### Neovim
-
-### Terminal
-* Starship
-* TMux
+TMux config.
 
 ## Scripts to consider adding
 * .xprofile (sets KDE styling)
-* .fehbg (sets wallpapers)
-
 
 * install script (Nix? Ansible?)
 * Unify colours across everything (X11 colours?)
