@@ -33,8 +33,9 @@ Config for i3-wm and i3-statusbar. Still a work in progress
 
 ### TODO
 
-* status bar options (what to display etc)
-* status bar emoji
+* Power management
+* Status bar options (what to display etc)
+* Status bar emoji
 * Cycle workspaces
 * Fix KDE/Gnome theming
 * Bluetooth management (maybe? Or just use command line)

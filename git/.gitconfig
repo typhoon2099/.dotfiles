@@ -36,3 +36,5 @@
 	path = ./.gitconfig_local
 [rerere]
 	enabled = true
+[help]
+	autocorrect = 20
