@@ -56,6 +56,7 @@ source ~/.config/nvim/airline.vim
 
 lua require("config.cmp")
 lua require("config.lspconfig")
+lua require("config.treesitter")
 
 " Colour Options
 colorscheme strawberry-dark
