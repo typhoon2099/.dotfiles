@@ -39,10 +39,3 @@ set completeopt=menu,menuone,preview,noselect
 " Tab through buffers
 nmap <silent> <tab> :bnext<cr>
 nmap <silent> <S-tab> :bprevious<cr>
-
-" Tab to indent in visual select
-vmap <silent> <tab> >
-vmap <silent> <S-tab> <
-
-nmap <leader>ww :bd<CR>
-nmap <leader>www :bw<CR>
