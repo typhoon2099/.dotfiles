@@ -40,6 +40,7 @@ Config for i3-wm and i3-statusbar. Still a work in progress
 * Fix KDE/Gnome theming
 * Bluetooth management (maybe? Or just use command line)
 * Add ~/.fehbg script (after making more generic visa vi file names)
+* Prevent over-amplification for volume (don't allow > 100%)
 
 ## macos
 
