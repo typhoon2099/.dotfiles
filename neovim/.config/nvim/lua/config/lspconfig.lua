@@ -43,7 +43,7 @@ local on_attach = function(client, bufnr)
   end
 end
 
-
+lspconfig.sumneko_lua.setup{}
 
 lspconfig.rust_analyzer.setup{
   on_attach = on_attach,
