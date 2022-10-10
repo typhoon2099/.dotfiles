@@ -39,3 +39,6 @@ set completeopt=menu,menuone,preview,noselect
 " Tab through buffers
 nmap <silent> <tab> :bnext<cr>
 nmap <silent> <S-tab> :bprevious<cr>
+
+" Disable mouse
+set mouse=

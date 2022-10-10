@@ -63,6 +63,8 @@ which are manage by Plug Vim.
 * rust-analyzer (nightly)
 * svelte-language-server (and thus node)
 * lua-language-server
+* vscode-langservers-extracted
+* emmet-ls
 * Solargraph
 * terraformls
 * tflint

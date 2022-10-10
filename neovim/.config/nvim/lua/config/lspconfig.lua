@@ -1,4 +1,5 @@
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local lspconfig = require'lspconfig'
 
@@ -43,8 +44,10 @@ local on_attach = function(client, bufnr)
   end
 end
 
+-- Lua
 lspconfig.sumneko_lua.setup{}
 
+-- Rust
 lspconfig.rust_analyzer.setup{
   on_attach = on_attach,
   capabilities = capabilities,
@@ -57,26 +60,48 @@ lspconfig.rust_analyzer.setup{
     },
   },
 }
+require('crates').setup()
 
+-- Ruby
 lspconfig.solargraph.setup{
   on_attach = on_attach,
   capabilities = capabilities,
 }
 
+-- HTML/CSS/JS
+lspconfig.cssls.setup{
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+-- lspconfig.eslint.setup{
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+-- }
+lspconfig.html.setup{
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+lspconfig.emmet_ls.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+})
+
+-- TODO: Stylelint
+-- TODO: Tailwind CSS
+
+-- Svelte
 lspconfig.svelte.setup{
   on_attach = on_attach,
   capabilities = capabilities,
 }
 
+-- Terraform
 lspconfig.terraformls.setup{
   on_attach = on_attach,
   capabilities = capabilities,
 }
-
 lspconfig.tflint.setup{
   on_attach = on_attach,
   capabilities = capabilities,
 }
-
-require('crates').setup()
 
