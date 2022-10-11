@@ -32,9 +32,6 @@ call plug#begin()
   Plug 'rust-lang/rust.vim'
   Plug 'Saecki/crates.nvim'
 
-  " Ruby Stuff
-  Plug 'ngmy/vim-rubocop'
-
   " Colour Stuff
   Plug 'bringsrain/strawberry'
   Plug 'ap/vim-css-color'
@@ -70,4 +67,3 @@ map <space>pt :PnpmTest<CR>
 
 " Vim Test
 source ~/.config/nvim/vim-test.vim
-source ~/.config/nvim/vim-rubocop.vim
