@@ -33,7 +33,7 @@ call plug#begin()
   Plug 'ap/vim-css-color'
 
   " Git Stuff
-  Plug 'mhinz/vim-signify'
+  Plug 'airblade/vim-gitgutter'
   Plug 'tpope/vim-fugitive'
 
   " Testing Stuff
