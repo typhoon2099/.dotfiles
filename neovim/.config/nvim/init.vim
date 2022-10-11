@@ -24,10 +24,6 @@ call plug#begin()
   Plug 'hrsh7th/vim-vsnip'
   Plug 'hrsh7th/cmp-vsnip'
 
-  " Javascript Stuff
-  Plug 'rajasegar/vim-pnpm'
-  Plug 'evanleck/vim-svelte', {'branch': 'main'}
-
   " Rust Stuff
   Plug 'rust-lang/rust.vim'
   Plug 'Saecki/crates.nvim'
