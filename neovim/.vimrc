@@ -8,6 +8,7 @@ set list
 set nohlsearch
 set hidden
 set noswapfile
+let mapleader=" "
 
 " Indentation
 set tabstop=4 softtabstop=4
