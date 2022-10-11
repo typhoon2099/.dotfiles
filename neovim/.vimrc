@@ -18,9 +18,10 @@ set shiftround
 
 " Folding
 set nofoldenable
-set foldmethod=syntax
-set foldcolumn=2
-set foldlevel=1
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
+set foldcolumn=3
+set foldlevel=10
 
 set nowrap
 set colorcolumn=80
