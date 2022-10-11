@@ -9,3 +9,4 @@ nnoremap <leader>gs <cmd>lua require('telescope.builtin').git_status()<cr>
 nnoremap <leader>gb <cmd>lua require('telescope.builtin').git_branches()<cr>
 nnoremap <leader>gbc <cmd>lua require('telescope.builtin').git_bcommits()<cr>
 nnoremap <leader>gg <cmd>:Telescope builtin<cr>
+nnoremap <leader>gr <cmd>:Telescope registers<cr>
