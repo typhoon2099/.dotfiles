@@ -45,6 +45,7 @@ call plug#end()
 
 source ~/.config/nvim/telescope.vim
 source ~/.config/nvim/fugitive.vim
+source ~/.config/nvim/gitgutter.vim
 source ~/.config/nvim/airline.vim
 
 lua require("config.cmp")
