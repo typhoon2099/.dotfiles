@@ -6,6 +6,5 @@ if [[ -f "$LOCAL_CONFIG" ]]; then
 fi
 
 autoload -Uz compinit && compinit && compinit
-bindkey -v
 
 eval "$(starship init zsh)"
