@@ -31,6 +31,7 @@
 
 [alias]
 	tidyup = "!git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
+  fixup = "rebase -i --autosquash"
 
 [include]
 	path = ./.gitconfig_local
