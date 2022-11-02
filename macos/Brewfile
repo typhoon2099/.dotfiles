@@ -1,0 +1,27 @@
+# Neovim Stuff
+brew "neovim"
+brew "ripgrep"
+brew "fd"
+brew "lua-language-server"
+
+# Terminal Stuff
+brew "starship"
+brew "tmux"
+brew "ranger"
+brew "overmind"
+brew "bat"
+brew "direnv"
+
+# Version Managers
+brew "git"
+brew "asdf"
+
+# Other
+brew "gnupg"
+brew "stow"
+
+# Apps
+cask "firefox"
+cask "iterm2"
+cask "chromium"
+cask "keepassxc"

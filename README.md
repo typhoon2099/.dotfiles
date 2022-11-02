@@ -50,6 +50,15 @@ depends on individual software support).
 Note: You need to copy/paste the file to ensure that applications can pick it up
 properly (symlinking as per stow doesn't seem to work reliably).
 
+iTerm2 profile to import and use. For iTerm Modifiers should be remapped as
+such:
+
+- Control -> Right Command
+- Left Command -> Control
+- Right Command -> Left Command
+
+Brewfile to get up and running on MacOS quickly.
+
 ## neovim
 
 Text editor with lots of plugins for software development. A number of languages
