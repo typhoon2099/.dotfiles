@@ -79,6 +79,8 @@ which are manage by Plug Vim.
 * tflint
 * fd
 * RipGrep
+* typescript
+* typescript-language-server
 
 ### TODO
 * Vim emmet

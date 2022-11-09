@@ -99,6 +99,10 @@ lspconfig.emmet_ls.setup({
   on_attach = on_attach,
   capabilities = capabilities,
 })
+lspconfig.tsserver.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+})
 
 -- TODO: Stylelint
 -- TODO: Tailwind CSS
