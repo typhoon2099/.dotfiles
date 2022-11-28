@@ -1,9 +1,23 @@
-format = "$directory(|( $git_branch)( $git_commit)( $git_state)( $git_metrics)( $git_status))( | $ruby)( | $nodejs)( | $rust)( | $golang)( | $terraform)( | $package)( | $all)( | $cmd_duration)$line_break$character"
-add_newline = false
+format = """
+(($git_branch)( $git_commit)( $git_state)( $git_metrics)( $git_status)\n)\
+(($ruby | )($nodejs | )($rust | )($golang | )($terraform | )\
+($package | )$all\n)\
+$directory\
+$line_break\
+$character"""
+right_format = "$cmd_duration"
+add_newline = true
 command_timeout = 2000
 
 [aws]
 disabled = true
+
+[cmd_duration]
+min_time = 200
+show_milliseconds = true
+
+[directory]
+truncate_to_repo = false
 
 [git_branch]
 format = "[$symbol$branch]($style)"
