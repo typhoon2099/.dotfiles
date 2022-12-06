@@ -12,6 +12,12 @@ command_timeout = 2000
 [aws]
 disabled = true
 
+[character]
+vimcmd_symbol = "[N](bold green)"
+vimcmd_replace_one_symbol = "r"
+vimcmd_replace_symbol = "R"
+vimcmd_visual_symbol = "V"
+
 [cmd_duration]
 min_time = 200
 show_milliseconds = true
