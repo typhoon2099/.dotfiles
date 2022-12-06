@@ -43,7 +43,6 @@ call plug#begin()
   Plug 'hashivim/vim-terraform'
 call plug#end()
 
-source ~/.config/nvim/telescope.vim
 source ~/.config/nvim/fugitive.vim
 source ~/.config/nvim/gitgutter.vim
 source ~/.config/nvim/airline.vim
@@ -51,6 +50,7 @@ source ~/.config/nvim/airline.vim
 lua require("config.cmp")
 lua require("config.lspconfig")
 lua require("config.treesitter")
+lua require("config.telescope")
 
 " Colour Options
 colorscheme strawberry-dark
