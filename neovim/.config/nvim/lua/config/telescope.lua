@@ -8,6 +8,10 @@ telescope.setup({
     live_grep = {
       additional_args = { "--hidden" },
     },
+    buffers = {
+      theme = 'dropdown',
+      initial_mode = 'normal',
+    },
   },
 })
 
