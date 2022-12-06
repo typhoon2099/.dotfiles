@@ -7,9 +7,12 @@ call plug#begin()
   Plug 'editorconfig/editorconfig-vim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-  Plug 'nvim-telescope/telescope.nvim'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
+
+  " Telescope Stuff
+  Plug 'nvim-telescope/telescope.nvim'
+  Plug 'nvim-telescope/telescope-symbols.nvim'
 
   " LSP
   Plug 'neovim/nvim-lspconfig'
