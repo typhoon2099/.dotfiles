@@ -104,7 +104,11 @@ currently just some colour settings, and is still a work in progress.
 
 ## tmux
 
-TMux config.
+TMux config. Tmux plugin manage needs to be installed:
+
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
 
 ## Scripts to consider adding
 * .xprofile (sets KDE styling)
