@@ -1,50 +1,51 @@
 [core]
-	editor = nvim
-	autocrlf = input
-	excludesFile = ~/.gitignore_global
+  editor = nvim
+  autocrlf = input
+  excludesFile = ~/.gitignore_global
 
 [commit]
-	gpgsign = true
-	verbose = true
+  gpgsign = true
+  verbose = true
 [gpg]
-	program = gpg
+  program = gpg
 
 [color]
-	ui = auto
+  ui = auto
 
 [init]
-	defaultBranch = main
+  defaultBranch = main
 [fetch]
-	prune = true
+  prune = true
 [pull]
-	rebase = true
+  rebase = true
 [push]
-	default = current
+  default = current
 
 [merge]
-	tool = vimdiff
+  tool = vimdiff
 [mergetool]
-	prompt = false
-	keepBackup = false
+  prompt = false
+  keepBackup = false
 [mergetool "vimdiff"]
-	path = nvim
+  path = nvim
 
 [rebase]
-	autoSquash = true
-	autoStash = true
-	abbreviateCommands = true
+  autoSquash = true
+  autoStash = true
+  abbreviateCommands = true
 
 [alias]
-	tidyup = "!git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
+  tidyup = "!git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
+  l = "log --oneline --graph"
 
 [include]
-	path = ./.gitconfig_local
+  path = ./.gitconfig_local
 [rerere]
-	enabled = true
+  enabled = true
 [help]
-	autocorrect = 20
+  autocorrect = 20
 
 [url "git@github.com"]
-	insteadOf = gh
+  insteadOf = gh
 [url "git@github.com:typhoon2099/"]
-	insteadOf = me:
+  insteadOf = me:

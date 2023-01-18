@@ -1,3 +1,4 @@
+nnoremap <leader>g <cmd>:G<cr>
 nnoremap <leader>cc <cmd>:G commit<cr>
 nnoremap <leader>ca <cmd>:G commit --amend<cr>
 nnoremap <leader>ce <cmd>:G commit --amend --no-edit<cr>
