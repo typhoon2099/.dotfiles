@@ -19,17 +19,17 @@ avoid it being commited
 
 ## i3
 
-Config for i3-wm and i3-statusbar. Still a work in progress
+Config for `i3-wm` and `i3-statusbar`. Still a work in progress
 
 ### Required Software
 
-* i3-wm
-* i3status
-* feh
-* nm-applet (for managing network connections)
-* pactl (to control audio volume)
-* brightnessctl (for brightness control buttons)
-* playerctl (for media control buttons)
+* `i3-wm`
+* `i3status`
+* `feh`
+* `nm-applet` (for managing network connections)
+* `pactl` (to control audio volume)
+* `brightnessctl` (for brightness control buttons)
+* `playerctl` (for media control buttons)
 
 ### TODO
 
@@ -69,37 +69,38 @@ which are manage by Plug Vim.
 
 * Neovim (0.5+)
 * Plug Vim
-* rust-analyzer (nightly)
-* svelte-language-server (and thus node)
-* lua-language-server
-* vscode-langservers-extracted
-* emmet-ls
-* Solargraph
-* terraformls
-* tflint
-* fd
-* RipGrep
-* typescript
-* typescript-language-server
+* `rust-analyzer` (nightly)
+* `svelte-language-server` (and thus node)
+* `lua-language-server`
+* `vscode-langservers-extracted`
+* `emmet-ls`
+* `solargraph`
+* `terraformls`
+* `tflint`
+* `fd`
+* `RipGrep`
+* `typescript`
+* `typescript-language-server`
 
 ### TODO
+
 * Vim emmet
 * Vim CSS autocomplete
 * Vim ESLint
 * Vim Stylelint
-* vim-commentary
-* vim-rails
-* vim-surround/vim-sandwich
+* `vim-commentary`
+* `vim-rails`
+* `vim-surround/vim-sandwich`
 
 ## terminal
 
-Configs for bash, zsh, Starship, and xterm. Local zsh config can be added to
+Configs for `bash`, `zsh`, `Starship`, and `xterm`. Local zsh config can be added to
 `~/.zshrc_local`. Bash config is mostly just some aliases. The xterm config is
 currently just some colour settings, and is still a work in progress.
 
 ### Required Software
 
-* bash/zsh
+* `bash`/`zsh`
 * Starship
 
 ## tmux
@@ -110,8 +111,12 @@ TMux config. Tmux plugin manage needs to be installed:
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-## Scripts to consider adding
-* .xprofile (sets KDE styling)
+### Required software
 
+* `urlview`
+
+## Scripts to consider adding
+
+* .xprofile (sets KDE styling)
 * install script (Nix? Ansible?)
 * Unify colours across everything (X11 colours?)
