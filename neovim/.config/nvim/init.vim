@@ -62,9 +62,5 @@ colorscheme strawberry-dark
 " Inlay hints for Rust
 autocmd InsertLeave,BufEnter,BufWinEnter,TabEnter,BufWritePost,CursorHold *.rs :lua require'lsp_extensions'.inlay_hints{ prefix = ' » ', highlight = "Comment", enabled = {"ChainingHint", "TypeHint", "ParameterHint"} }
 
-" PNPM
-map <leader>pi :PnpmInstall<CR>
-map <leader>pt :PnpmTest<CR>
-
 " Vim Test
 source ~/.config/nvim/vim-test.vim
