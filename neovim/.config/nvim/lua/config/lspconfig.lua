@@ -31,17 +31,25 @@ local on_attach = function(client, bufnr)
     require('telescope.builtin').lsp_references();
   end, opts)
   vim.keymap.set("n", '<leader>f', function() vim.lsp.buf.format { async = true } end, opts)
-
-  if client.server_capabilities.document_highlight then
+  if client.server_capabilities.documentHighlightProvider then
+    vim.api.nvim_create_augroup("lsp_document_highlight", { clear = true })
+    vim.api.nvim_clear_autocmds { buffer = bufnr, group = "lsp_document_highlight" }
+    vim.api.nvim_create_autocmd("CursorHold", {
+      callback = vim.lsp.buf.document_highlight,
+      buffer = bufnr,
+      group = "lsp_document_highlight",
+      desc = "Document Highlight",
+    })
+    vim.api.nvim_create_autocmd("CursorMoved", {
+      callback = vim.lsp.buf.clear_references,
+      buffer = bufnr,
+      group = "lsp_document_highlight",
+      desc = "Clear All the References",
+    })
     vim.api.nvim_exec([[
       hi LspReferenceRead cterm=bold ctermbg=DarkMagenta guibg=LightYellow
       hi LspReferenceText cterm=bold ctermbg=DarkMagenta guibg=LightYellow
       hi LspReferenceWrite cterm=bold ctermbg=DarkMagenta guibg=LightYellow
-      augroup lsp_document_highlight
-        autocmd! * <buffer>
-        autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
-        autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
-      augroup END
     ]], false)
   end
 end
