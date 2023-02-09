@@ -9,6 +9,7 @@ call plug#begin()
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
+  Plug 'tpope/vim-commentary'
 
   " Telescope Stuff
   Plug 'nvim-telescope/telescope.nvim'

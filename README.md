@@ -88,7 +88,6 @@ which are manage by Plug Vim.
 * Vim CSS autocomplete
 * Vim ESLint
 * Vim Stylelint
-* `vim-commentary`
 * `vim-rails`
 * `vim-surround/vim-sandwich`
 
