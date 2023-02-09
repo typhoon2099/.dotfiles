@@ -45,12 +45,15 @@ call plug#begin()
 
   " Terraform Stuff
   Plug 'hashivim/vim-terraform'
+
+  Plug 'Eandrju/cellular-automaton.nvim'
 call plug#end()
 
 source ~/.config/nvim/fugitive.vim
 source ~/.config/nvim/gitgutter.vim
 source ~/.config/nvim/airline.vim
 
+lua require("config.cellular-automaton")
 lua require("config.cmp")
 lua require("config.lspconfig")
 lua require("config.treesitter")
