@@ -59,6 +59,9 @@ such:
 
 Brewfile to get up and running on MacOS quickly.
 
+Bash script to set the dock to autohide much faster than the default, which
+makes it a lot nicer to use.
+
 ## neovim
 
 Text editor with lots of plugins for software development. A number of languages
