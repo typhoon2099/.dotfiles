@@ -14,7 +14,7 @@ brew "direnv"
 
 # Version Managers
 brew "git"
-brew "asdf"
+brew "rtx"
 
 # Other
 brew "gnupg"
