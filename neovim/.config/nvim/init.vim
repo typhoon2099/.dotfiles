@@ -64,6 +64,8 @@ lua require('import-cost').setup()
 
 " Colour Options
 colorscheme strawberry-dark
+highlight Normal guibg=none
+highlight NonText guibg=none
 
 " Inlay hints for Rust
 autocmd InsertLeave,BufEnter,BufWinEnter,TabEnter,BufWritePost,CursorHold *.rs :lua require'lsp_extensions'.inlay_hints{ prefix = ' » ', highlight = "Comment", enabled = {"ChainingHint", "TypeHint", "ParameterHint"} }
