@@ -183,13 +183,8 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-# Start customisations
 
-## Low Chrome
-hide_edge_borders both
-default_border normal 0
-
-# Colours
+# Colours 1
 set $black #251c1f
 set $pink #dd95ad
 set $grey #797979
@@ -211,14 +206,8 @@ bar {
 
 bindsym $mod+m bar mode toggle
 
-# class                 border  backg.  text
-client.focused          $black   $black   $pink
-client.focused_inactive $black   $black   $grey
-client.unfocused        $black   $black   $grey
-client.urgent           $black   $pink    $black
-client.placeholder      $black   $black   $grey
-
-client.background $black
+include borders.conf
+include colors.conf
 
 # Set wallpapers
 exec --no-startup-id ~/.fehbg
