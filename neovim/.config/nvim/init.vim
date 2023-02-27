@@ -11,6 +11,8 @@ call plug#begin()
   Plug 'vim-airline/vim-airline-themes'
   Plug 'tpope/vim-commentary'
 
+  Plug 'barrett-ruth/import-cost.nvim', { 'do': 'sh install.sh yarn' }
+
   " Telescope Stuff
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'nvim-telescope/telescope-symbols.nvim'
@@ -58,6 +60,7 @@ lua require("config.cmp")
 lua require("config.lspconfig")
 lua require("config.treesitter")
 lua require("config.telescope")
+lua require('import-cost').setup()
 
 " Colour Options
 colorscheme strawberry-dark
