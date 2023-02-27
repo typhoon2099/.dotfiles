@@ -49,3 +49,5 @@
   insteadOf = gh
 [url "git@github.com:typhoon2099/"]
   insteadOf = me:
+[log]
+	follow = true
