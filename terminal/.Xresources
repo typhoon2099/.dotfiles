@@ -1,3 +1,11 @@
+XTerm.termName: xterm-256color
+
+XTerm.vt100.locale: true
+
+XTerm.vt100.metaSendsEscape: true
+
+XTerm.vt100.colorBDMode: true
+
 ! special
 *.foreground:   #dd95ad
 *.background:   #251c1f
@@ -41,5 +49,3 @@
 xterm*vt100.translations: #override \n\
     Shift Ctrl <Key>C: copy-selection(CLIPBOARD) \n\
     Shift Ctrl <Key>V: insert-selection(CLIPBOARD)
-
-XTerm*termName: xterm-256color
