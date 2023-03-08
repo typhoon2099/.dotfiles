@@ -185,12 +185,14 @@ mode "resize" {
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
+bindsym $mod+r mode "resize"
 
 
 # Colours 1
-set $black #251c1f
-set $pink #dd95ad
-set $grey #797979
+set $black  #251c1f
+set $pink   #dd95ad
+set $grey   #797979
+set $orange #de844b
 
 # Status Bar
 bar {
@@ -202,7 +204,7 @@ bar {
     focused_workspace $pink $pink $black
     active_workspace #ff0000 #ff0000 #ff0000
     inactive_workspace $black $black $pink
-    urgent_workspace #0000ff #0000ff #0000ff
+    urgent_workspace $orange $orange $black
     binding_mode #ffffff #ffffff #ffffff
   }
 }
