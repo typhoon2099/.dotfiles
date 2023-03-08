@@ -19,11 +19,12 @@ avoid it being commited
 
 ## i3
 
-Config for `i3-wm` and `i3-statusbar`. Still a work in progress
+Config for `i3-wm`, `i3-statusbar`, and `picom`. Still a work in progress.
 
 ### Required Software
 
 * `i3-wm`
+* `picom`
 * `i3status`
 * `feh`
 * `nm-applet` (for managing network connections)
