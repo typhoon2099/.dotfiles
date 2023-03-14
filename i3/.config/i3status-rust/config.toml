@@ -1,0 +1,53 @@
+cons_format = "{icon}"
+
+[theme]
+theme = "solarized-dark"
+[theme.overrides]
+idle_bg = "#251c1f"
+idle_fg = "#dd95ad"
+
+good_bg = "#251c1f"
+good_fg = "#dd95ad"
+
+warning_bg = "#de844b"
+warning_fg = "#251c1f"
+
+critical_bg = "#dd4c4c"
+critical_fg = "#251c1f"
+
+info_bg = "#4eded2"
+info_fg = "#251c1f"
+
+[icons]
+icons = "awesome4"
+
+[[block]]
+block = "music"
+
+[[block]]
+block = "cpu"
+
+[[block]]
+block = "memory"
+format = " $icon $mem_total_used_percents.eng(w:2) "
+format_alt = " $icon_swap $swap_used_percents.eng(w:2) "
+
+[[block]]
+block = "sound"
+[[block.click]]
+button = "left"
+cmd = "pavucontrol"
+
+[[block]]
+block = "battery"
+format = " $icon $percentage ($time)"
+full_format = " $icon $percentage ($time)"
+
+[[block]]
+block = "kdeconnect"
+
+[[block]]
+block = "time"
+interval = 1
+format = " $timestamp.datetime(f:'%F %H:%M:%S') "
+

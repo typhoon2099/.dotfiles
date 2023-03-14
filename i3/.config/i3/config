@@ -110,7 +110,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+Space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -165,7 +165,7 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 # resize window (you can also use the mouse for that)
-mode "resize" {
+mode "Resize" {
         # These bindings trigger as soon as you enter the resize mode
 
         # Pressing left will shrink the window’s width.
@@ -188,7 +188,7 @@ mode "resize" {
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
-bindsym $mod+r mode "resize"
+bindsym $mod+r mode "Resize"
 
 
 # Colours 1
@@ -199,16 +199,16 @@ set $orange #de844b
 
 # Status Bar
 bar {
-  status_command i3blocks
+  status_command ~/.cargo/bin/i3status-rs
   position top
-  font pango:Hack 11
+  font pango:Hack 12
   colors {
     background $black
     focused_workspace $pink $pink $black
     active_workspace #ff0000 #ff0000 #ff0000
     inactive_workspace $black $black $pink
     urgent_workspace $orange $orange $black
-    binding_mode #ffffff #ffffff #ffffff
+    binding_mode $pink $pink $black
   }
 }
 

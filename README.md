@@ -19,13 +19,13 @@ avoid it being commited
 
 ## i3
 
-Config for `i3-wm`, `i3-statusbar`, and `picom`. Still a work in progress.
+Config for `i3-wm`, `i3status-rust`, and `picom`. Still a work in progress.
 
 ### Required Software
 
 * `i3-wm`
 * `picom`
-* `i3status`
+* `i3status-rust`
 * `feh`
 * `nm-applet` (for managing network connections)
 * `pactl` (to control audio volume)
@@ -35,13 +35,10 @@ Config for `i3-wm`, `i3-statusbar`, and `picom`. Still a work in progress.
 ### TODO
 
 * Power management
-* Status bar options (what to display etc)
-* Status bar emoji
-* Cycle workspaces
 * Fix KDE/Gnome theming
 * Bluetooth management (maybe? Or just use command line)
 * Add ~/.fehbg script (after making more generic visa vi file names)
-* Prevent over-amplification for volume (don't allow > 100%)
+* Prevent over-amplification for volume (don't allow > 100%) (wpctl)
 
 ## macos
 
