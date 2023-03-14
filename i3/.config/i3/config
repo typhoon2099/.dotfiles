@@ -36,6 +36,9 @@ exec --no-startup-id nm-applet
 # pCloud
 exec --no-startup-id ~/Applications/pcloud_6eaa63aec2f4e2bbd75300ceaa21a3c2
 
+# KDE Connect
+exec --no-startup-id kdeconnect-indicator
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status pkill -SIGRTMIN+10 i3blocks
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
