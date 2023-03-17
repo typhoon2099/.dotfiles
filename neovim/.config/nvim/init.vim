@@ -29,6 +29,7 @@ call plug#begin()
   Plug 'hrsh7th/cmp-cmdline'
   Plug 'hrsh7th/vim-vsnip'
   Plug 'hrsh7th/cmp-vsnip'
+  Plug 'windwp/nvim-autopairs'
 
   " Rust Stuff
   Plug 'rust-lang/rust.vim'
@@ -61,6 +62,7 @@ lua require("config.lspconfig")
 lua require("config.treesitter")
 lua require("config.telescope")
 lua require('import-cost').setup()
+lua require("config.nvim-autopairs")
 
 " Colour Options
 colorscheme strawberry-dark
