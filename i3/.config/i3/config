@@ -221,5 +221,5 @@ include borders.conf
 include colors.conf
 
 # Set wallpapers
-exec --no-startup-id ~/.fehbg
+exec --no-startup-id feh --no-fehbg --bg-fill Pictures/Wallpapers/Cherry-blossoms-trees-1080x1920.jpg
 
