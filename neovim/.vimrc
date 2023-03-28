@@ -36,7 +36,7 @@ set updatetime=50
 syntax enable
 filetype plugin indent on
 
-set completeopt=menu,menuone,preview,noselect
+set completeopt=menu,menuone,preview,noselect,noinsert
 
 " Tab through buffers
 nmap <silent> <tab> :bnext<cr>
