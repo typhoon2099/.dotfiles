@@ -19,7 +19,6 @@ call plug#begin()
 
   " LSP
   Plug 'neovim/nvim-lspconfig'
-  Plug 'nvim-lua/lsp_extensions.nvim'
 
   " Completion Stuff
   Plug 'hrsh7th/nvim-cmp'
@@ -69,9 +68,6 @@ lua require("config.nvim-autopairs")
 colorscheme strawberry-dark
 highlight Normal guibg=none
 highlight NonText guibg=none
-
-" Inlay hints for Rust
-autocmd InsertLeave,BufEnter,BufWinEnter,TabEnter,BufWritePost,CursorHold *.rs :lua require'lsp_extensions'.inlay_hints{ prefix = ' » ', highlight = "Comment", enabled = {"ChainingHint", "TypeHint", "ParameterHint"} }
 
 " Vim Test
 source ~/.config/nvim/vim-test.vim
