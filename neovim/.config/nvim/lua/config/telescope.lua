@@ -11,6 +11,11 @@ telescope.setup({
     buffers = {
       theme = 'dropdown',
       initial_mode = 'normal',
+      mappings = {
+        n = {
+          ["d"] = "delete_buffer",
+        },
+      },
     },
   },
 })
