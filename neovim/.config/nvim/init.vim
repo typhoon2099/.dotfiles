@@ -7,9 +7,11 @@ call plug#begin()
   Plug 'editorconfig/editorconfig-vim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-  Plug 'vim-airline/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
   Plug 'tpope/vim-commentary'
+
+  " Status bar
+  Plug 'nvim-lualine/lualine.nvim'
+  Plug 'nvim-tree/nvim-web-devicons'
 
   Plug 'barrett-ruth/import-cost.nvim', { 'do': 'sh install.sh yarn' }
 
@@ -49,25 +51,26 @@ call plug#begin()
   " Terraform Stuff
   Plug 'hashivim/vim-terraform'
 
+  " Fun
   Plug 'Eandrju/cellular-automaton.nvim'
 call plug#end()
-
-source ~/.config/nvim/fugitive.vim
-source ~/.config/nvim/gitgutter.vim
-source ~/.config/nvim/airline.vim
-
-lua require("config.cellular-automaton")
-lua require("config.cmp")
-lua require("config.lspconfig")
-lua require("config.treesitter")
-lua require("config.telescope")
-lua require('import-cost').setup()
-lua require("config.nvim-autopairs")
 
 " Colour Options
 colorscheme strawberry-dark
 highlight Normal guibg=none
 highlight NonText guibg=none
+
+source ~/.config/nvim/fugitive.vim
+source ~/.config/nvim/gitgutter.vim
+
+lua require("config.cellular-automaton")
+lua require("config.cmp")
+lua require("config.lspconfig")
+lua require("config.lualine")
+lua require("config.treesitter")
+lua require("config.telescope")
+lua require('import-cost').setup()
+lua require("config.nvim-autopairs")
 
 " Vim Test
 source ~/.config/nvim/vim-test.vim
