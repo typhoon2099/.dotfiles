@@ -2,6 +2,13 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protoc
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local lspconfig = require'lspconfig'
+local navbuddy = require("nvim-navbuddy")
+navbuddy.setup({
+  lsp = {
+    auto_attach = true
+  }
+})
+local navic = require("nvim-navic")
 
 local opts = { noremap = true, silent = true }
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, opts)
@@ -11,6 +18,8 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, opts)
 
 local on_attach = function(client, bufnr)
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+  navic.attach(client, bufnr)
+  navbuddy.attach(client, bufnr)
 
   local opts = { noremap = true, silent = true, buffer=bufnr }
 

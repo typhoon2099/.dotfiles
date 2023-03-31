@@ -8,6 +8,9 @@ call plug#begin()
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'tpope/vim-commentary'
+  Plug 'MunifTanjim/nui.nvim'
+  Plug 'SmiteshP/nvim-navbuddy'
+  Plug 'SmiteshP/nvim-navic'
 
   " Status bar
   Plug 'nvim-lualine/lualine.nvim'
