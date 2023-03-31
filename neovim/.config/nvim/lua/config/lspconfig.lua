@@ -18,10 +18,13 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, opts)
 
 local on_attach = function(client, bufnr)
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
-  navic.attach(client, bufnr)
-  vim.keymap.set('n', '<leader>nn', navbuddy.open, opts)
 
-  local opts = { noremap = true, silent = true, buffer=bufnr }
+  if client.server_capabilities.documentSymbolProvider then
+    navic.attach(client, bufnr)
+    vim.keymap.set('n', '<leader>nn', navbuddy.open, opts)
+  end
+
+  local opts = { noremap = true, silent = true, buffer = bufnr }
 
   vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
