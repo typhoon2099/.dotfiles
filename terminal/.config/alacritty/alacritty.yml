@@ -29,17 +29,6 @@ window:
   # The value `0.0` is completely transparent and `1.0` is opaque.
   opacity: 0.9
 
-  # Startup Mode (changes require restart)
-  #
-  # Values for `startup_mode`:
-  #   - Windowed
-  #   - Maximized
-  #   - Fullscreen
-  #
-  # Values for `startup_mode` (macOS only):
-  #   - SimpleFullscreen
-  startup_mode: Fullscreen
-
   # Make `Option` key behave as `Alt` (macOS only):
   #   - OnlyLeft
   #   - OnlyRight
