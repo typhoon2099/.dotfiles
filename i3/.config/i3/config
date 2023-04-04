@@ -59,7 +59,7 @@ bindsym XF86AudioNext exec --no-startup-id playerctl next
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec WINIT_X11_SCALE_FACTOR=1 alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
