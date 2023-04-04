@@ -8,6 +8,8 @@ call plug#begin()
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'tpope/vim-commentary'
+
+  " LSP Document Symbols
   Plug 'MunifTanjim/nui.nvim'
   Plug 'SmiteshP/nvim-navbuddy'
   Plug 'SmiteshP/nvim-navic'
@@ -42,7 +44,7 @@ call plug#begin()
 
   " Colour Stuff
   Plug 'bringsrain/strawberry'
-  Plug 'ap/vim-css-color'
+  Plug 'brenoprata10/nvim-highlight-colors'
 
   " Git Stuff
   Plug 'airblade/vim-gitgutter'
@@ -72,8 +74,9 @@ lua require("config.lspconfig")
 lua require("config.lualine")
 lua require("config.treesitter")
 lua require("config.telescope")
-lua require('import-cost').setup()
 lua require("config.nvim-autopairs")
+lua require('import-cost').setup()
+lua require('nvim-highlight-colors').setup {}
 
 " Vim Test
 source ~/.config/nvim/vim-test.vim
