@@ -42,7 +42,7 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', 'gr', function()
     require('telescope.builtin').lsp_references();
   end, opts)
-  vim.keymap.set("n", '<leader>f', function() vim.lsp.buf.format { async = true } end, opts)
+  vim.keymap.set("n", 'ff', function() vim.lsp.buf.format { async = true } end, opts)
   if client.server_capabilities.documentHighlightProvider then
     vim.api.nvim_create_augroup("lsp_document_highlight", { clear = true })
     vim.api.nvim_clear_autocmds { buffer = bufnr, group = "lsp_document_highlight" }
