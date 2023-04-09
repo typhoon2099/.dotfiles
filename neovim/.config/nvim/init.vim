@@ -16,7 +16,6 @@ call plug#begin()
 
   " Status bar
   Plug 'nvim-lualine/lualine.nvim'
-  Plug 'nvim-tree/nvim-web-devicons'
 
   Plug 'barrett-ruth/import-cost.nvim', { 'do': 'sh install.sh yarn' }
 
