@@ -1,7 +1,7 @@
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-local lspconfig = require'lspconfig'
+local lspconfig = require 'lspconfig'
 local navbuddy = require("nvim-navbuddy")
 navbuddy.setup({
   lsp = {
@@ -67,7 +67,7 @@ local on_attach = function(client, bufnr)
 end
 
 -- Lua
-lspconfig.lua_ls.setup{
+lspconfig.lua_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
   settings = {
@@ -80,7 +80,7 @@ lspconfig.lua_ls.setup{
 }
 
 -- Rust
-lspconfig.rust_analyzer.setup{
+lspconfig.rust_analyzer.setup {
   on_attach = on_attach,
   capabilities = capabilities,
   cmd = { "rustup", "run", "nightly", "rust-analyzer" },
@@ -95,13 +95,13 @@ lspconfig.rust_analyzer.setup{
 require('crates').setup()
 
 -- Ruby
-lspconfig.solargraph.setup{
+lspconfig.solargraph.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
 
 -- HTML/CSS/JS
-lspconfig.cssls.setup{
+lspconfig.cssls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
@@ -113,7 +113,7 @@ lspconfig.stylelint_lsp.setup({
   on_attach = on_attach,
   capabilities = capabilities,
 })
-lspconfig.html.setup{
+lspconfig.html.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
@@ -127,20 +127,20 @@ lspconfig.tsserver.setup({
 })
 
 -- TODO: Stylelint
--- TODO: Tailwind CSS
+lspconfig.tailwindcss.setup {}
 
 -- Svelte
-lspconfig.svelte.setup{
+lspconfig.svelte.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
 
 -- Terraform
-lspconfig.terraformls.setup{
+lspconfig.terraformls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
-lspconfig.tflint.setup{
+lspconfig.tflint.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
