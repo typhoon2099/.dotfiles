@@ -7,4 +7,9 @@ fi
 
 autoload -Uz compinit && compinit && compinit
 
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
+setopt CORRECT_ALL
+
 eval "$(starship init zsh)"
