@@ -79,19 +79,27 @@ lspconfig.lua_ls.setup {
   },
 }
 
--- Rust
-lspconfig.rust_analyzer.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  cmd = { "rustup", "run", "nightly", "rust-analyzer" },
-  settings = {
-    ["rust-analyzer"] = {
-      checkOnSave = {
-        command = "clippy",
+local rt = require("rust-tools")
+
+rt.setup({
+  server = {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    settings = {
+      ["rust-analyzer"] = {
+        cargo = {
+          features = "all",
+        },
+        checkOnSave = {
+          command = "clippy",
+        },
+        procMacro = {
+          enable = true,
+        },
       },
     },
   },
-}
+})
 require('crates').setup()
 
 -- Ruby

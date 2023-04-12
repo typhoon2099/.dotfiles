@@ -39,6 +39,7 @@ call plug#begin()
   " Rust Stuff
   Plug 'rust-lang/rust.vim'
   Plug 'Saecki/crates.nvim'
+  Plug 'simrat39/rust-tools.nvim'
 
   " Colour Stuff
   Plug 'bringsrain/strawberry'
