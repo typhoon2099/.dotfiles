@@ -4,7 +4,6 @@ let &packpath=&runtimepath
 source ~/.vimrc
 
 call plug#begin()
-  Plug 'editorconfig/editorconfig-vim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'tpope/vim-commentary'
