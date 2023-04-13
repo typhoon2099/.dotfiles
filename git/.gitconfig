@@ -39,7 +39,7 @@
   l = "log --oneline --graph"
 
 [include]
-  path = ./.gitconfig_local
+  path = ./.local.gitconfig
 [rerere]
   enabled = true
 [help]

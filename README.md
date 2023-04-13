@@ -9,7 +9,7 @@ installed alongside it, and any other notes regarding it
 ## git
 
 Contains a set of sensible defaults for git workflows. It doesn't contain user
-name, email or signing key, they should be added to `~/.gitconfig_local`, to
+name, email or signing key, they should be added to `~/.local.gitconfig`, to
 avoid it being commited
 
 ### Required Software
@@ -95,7 +95,7 @@ which are manage by Plug Vim.
 ## terminal
 
 Configs for `bash`, `zsh`, `Starship`, and `xterm`. Local zsh config can be added to
-`~/.zshrc_local`. Bash config is mostly just some aliases. The xterm config is
+`~/.local.zsh`. Bash config is mostly just some aliases. The xterm config is
 currently just some colour settings, and is still a work in progress.
 
 ### Required Software
