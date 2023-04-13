@@ -25,3 +25,6 @@ cask "firefox"
 cask "iterm2"
 cask "chromium"
 cask "keepassxc"
+
+# Testing
+brew "ical-buddy"

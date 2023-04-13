@@ -98,10 +98,14 @@ Configs for `bash`, `zsh`, `Starship`, and `xterm`. Local zsh config can be adde
 `~/.local.zsh`. Bash config is mostly just some aliases. The xterm config is
 currently just some colour settings, and is still a work in progress.
 
+Required software can be installed on Mac using the supplied Brewfile
+
 ### Required Software
 
 * `bash`/`zsh`
 * Starship
+* RTX
+* Direnv
 
 ## tmux
 

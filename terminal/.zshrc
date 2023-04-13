@@ -18,4 +18,7 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_SPACE
 setopt CORRECT_ALL
 
+# Initialise tools
+eval "$(direnv hook zsh)"
+eval "$(rtx activate zsh)"
 eval "$(starship init zsh)"
