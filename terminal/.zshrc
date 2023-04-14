@@ -1,5 +1,7 @@
 source ~/.bash_aliases
 
+export TERM=alacritty
+
 LOCAL_CONFIG=~/.local.zshrc
 if [[ -f "$LOCAL_CONFIG" ]]; then
     source "$LOCAL_CONFIG"
@@ -13,9 +15,13 @@ zle -N self-insert url-quote-magic
 autoload -Uz bracketed-paste-magic
 zle -N bracketed-paste bracketed-paste-magic
 
+setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_SPACE
+setopt HIST_NO_STORE
+setopt HIST_REDUCE_BLANKS
+setopt HIST_SAVE_NO_DUPS
 setopt CORRECT_ALL
 
 # Initialise tools
