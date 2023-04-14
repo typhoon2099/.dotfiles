@@ -133,6 +133,11 @@ lspconfig.tsserver.setup({
   on_attach = on_attach,
   capabilities = capabilities,
 })
+lspconfig.jsonls.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+})
+
 
 -- TODO: Stylelint
 lspconfig.tailwindcss.setup {}
