@@ -36,6 +36,7 @@ call plug#begin()
   Plug 'hrsh7th/cmp-vsnip'
   Plug 'windwp/nvim-autopairs'
   Plug 'hrsh7th/cmp-emoji'
+  Plug 'hrsh7th/cmp-nvim-lsp-document-symbol'
 
   " Rust Stuff
   Plug 'rust-lang/rust.vim'
@@ -64,6 +65,7 @@ call plug#end()
 colorscheme strawberry-dark
 highlight Normal guibg=none
 highlight NonText guibg=none
+highlight! link CmpItemKindDefault Normal
 
 source ~/.config/nvim/fugitive.vim
 source ~/.config/nvim/gitgutter.vim
