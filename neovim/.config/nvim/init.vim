@@ -35,6 +35,7 @@ call plug#begin()
   Plug 'hrsh7th/vim-vsnip'
   Plug 'hrsh7th/cmp-vsnip'
   Plug 'windwp/nvim-autopairs'
+  Plug 'hrsh7th/cmp-emoji'
 
   " Rust Stuff
   Plug 'rust-lang/rust.vim'

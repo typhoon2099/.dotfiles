@@ -22,6 +22,7 @@ cmp.setup({
     { name = 'nvim_lsp_signature_help' },
     { name = 'vsnip' },
     { name = "crates" },
+    { name = "emoji" },
   }, {
     { name = 'buffer' },
   })
