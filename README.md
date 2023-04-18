@@ -39,6 +39,7 @@ Config for `i3-wm`, `i3status-rust`, and `picom`. Still a work in progress.
 * Bluetooth management (maybe? Or just use command line)
 * Add ~/.fehbg script (after making more generic visa vi file names)
 * Prevent over-amplification for volume (don't allow > 100%) (wpctl)
+* Set default workspaces/windows for applications
 
 ## macos
 
@@ -118,6 +119,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ### Required software
 
 * `urlview`
+* `entr`
 
 ## Scripts to consider adding
 

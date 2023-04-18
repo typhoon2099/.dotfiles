@@ -12,6 +12,9 @@ brew "overmind"
 brew "bat"
 brew "direnv"
 
+# Tmux Stuff
+brew "entr"
+
 # Version Managers
 brew "git"
 brew "rtx"
