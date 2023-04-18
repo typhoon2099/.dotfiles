@@ -1,7 +1,5 @@
 source ~/.bash_aliases
 
-export TERM=alacritty
-
 LOCAL_CONFIG=~/.local.zshrc
 if [[ -f "$LOCAL_CONFIG" ]]; then
     source "$LOCAL_CONFIG"
