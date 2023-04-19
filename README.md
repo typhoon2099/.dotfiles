@@ -40,6 +40,8 @@ Config for `i3-wm`, `i3status-rust`, and `picom`. Still a work in progress.
 * Add ~/.fehbg script (after making more generic visa vi file names)
 * Prevent over-amplification for volume (don't allow > 100%) (wpctl)
 * Set default workspaces/windows for applications
+* Notifications
+* Emoji picker
 
 ## macos
 

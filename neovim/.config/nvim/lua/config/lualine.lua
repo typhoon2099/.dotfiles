@@ -13,33 +13,23 @@ local colors = {
 local theme = {
   normal = {
     a = { bg = colors.pink, fg = colors.brown, gui = 'bold' },
-    b = { bg = colors.brown, fg = colors.pink },
-    c = { bg = colors.pink, fg = colors.brown },
+    b = { bg = "#BE8195", fg = colors.brown },
+    c = { bg = "#A06D7E", fg = colors.brown },
   },
   insert = {
     a = { bg = colors.blue, fg = colors.black, gui = 'bold' },
-    b = { bg = colors.brown, fg = colors.pink },
-    c = { bg = colors.pink, fg = colors.brown },
   },
   visual = {
     a = { bg = colors.yellow, fg = colors.black, gui = 'bold' },
-    b = { bg = colors.brown, fg = colors.pink },
-    c = { bg = colors.pink, fg = colors.brown },
   },
   replace = {
     a = { bg = colors.red, fg = colors.black, gui = 'bold' },
-    b = { bg = colors.brown, fg = colors.pink },
-    c = { bg = colors.pink, fg = colors.brown },
   },
   command = {
     a = { bg = colors.green, fg = colors.black, gui = 'bold' },
-    b = { bg = colors.brown, fg = colors.pink },
-    c = { bg = colors.pink, fg = colors.brown },
   },
   inactive = {
     a = { bg = colors.brown, fg = colors.pink, gui = 'bold' },
-    b = { bg = colors.brown, fg = colors.pink },
-    c = { bg = colors.brown, fg = colors.pink },
   }
 }
 

@@ -1,5 +1,7 @@
 # Color theme gradient
 
+Use colours from [here](https://coolors.co/dd95ad)
+
 #DD95AD
 #BE8195
 #A06D7E
