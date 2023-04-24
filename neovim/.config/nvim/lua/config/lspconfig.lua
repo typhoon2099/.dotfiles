@@ -158,3 +158,9 @@ lspconfig.tflint.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
+
+-- YAML
+lspconfig.yamlls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}

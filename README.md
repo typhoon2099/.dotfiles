@@ -85,6 +85,7 @@ which are manage by Plug Vim.
 * `RipGrep`
 * `typescript`
 * `typescript-language-server`
+* `yaml-language-server`
 
 ### TODO
 
