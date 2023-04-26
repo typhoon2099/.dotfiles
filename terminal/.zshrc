@@ -22,6 +22,10 @@ setopt HIST_REDUCE_BLANKS
 setopt HIST_SAVE_NO_DUPS
 setopt CORRECT_ALL
 
+export HISTFILE=~/.zsh_history
+export HISTSIZE=10000
+export SAVEHIST=10000
+
 # Initialise tools
 eval "$(direnv hook zsh)"
 eval "$(rtx activate zsh)"
