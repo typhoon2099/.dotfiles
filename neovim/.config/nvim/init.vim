@@ -72,6 +72,7 @@ source ~/.config/nvim/gitgutter.vim
 
 lua require("config.cellular-automaton")
 lua require("config.cmp")
+lua require("config.crates")
 lua require("config.lspconfig")
 lua require("config.lualine")
 lua require("config.treesitter")
