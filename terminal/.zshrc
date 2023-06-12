@@ -1,10 +1,5 @@
 source ~/.bash_aliases
 
-LOCAL_CONFIG=~/.local.zshrc
-if [[ -f "$LOCAL_CONFIG" ]]; then
-    source "$LOCAL_CONFIG"
-fi
-
 autoload -Uz compinit && compinit && compinit
 
 # Escape pasted URLs
@@ -30,6 +25,13 @@ export SAVEHIST=10000
 # Use GPG for SSH
 export GPG_TTY=$(tty)
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=1"
+
+LOCAL_CONFIG=~/.local.zshrc
+if [[ -f "$LOCAL_CONFIG" ]]; then
+    source "$LOCAL_CONFIG"
+fi
 
 # Initialise tools
 eval "$(direnv hook zsh)"
