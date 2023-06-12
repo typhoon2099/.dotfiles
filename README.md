@@ -37,11 +37,11 @@ Config for `i3-wm`, `i3status-rust`, and `picom`. Still a work in progress.
 * Power management
 * Fix KDE/Gnome theming
 * Bluetooth management (maybe? Or just use command line)
-* Add ~/.fehbg script (after making more generic visa vi file names)
 * Prevent over-amplification for volume (don't allow > 100%) (wpctl)
 * Set default workspaces/windows for applications
 * Notifications
 * Emoji picker
+* Lock screen (better lock screen?)
 
 ## macos
 
