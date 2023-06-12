@@ -41,7 +41,7 @@ cmd = "pavucontrol"
 [[block]]
 block = "battery"
 format = " $icon $percentage ($time)"
-full_format = " $icon $percentage ($time)"
+full_format = " $icon $percentage"
 
 [[block]]
 block = "kdeconnect"
