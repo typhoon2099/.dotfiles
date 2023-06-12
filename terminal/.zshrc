@@ -27,6 +27,10 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=10000
 export SAVEHIST=10000
 
+# Use GPG for SSH
+export GPG_TTY=$(tty)
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+
 # Initialise tools
 eval "$(direnv hook zsh)"
 eval "$(rtx activate zsh)"
