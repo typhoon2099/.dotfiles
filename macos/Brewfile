@@ -21,6 +21,7 @@ brew "rtx"
 
 # Other
 brew "gnupg"
+brew "pinentry-mac"
 brew "stow"
 
 # Apps
