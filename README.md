@@ -32,6 +32,8 @@ Config for `i3-wm`, `i3status-rust`, and `picom`. Still a work in progress.
 * `brightnessctl` (for brightness control buttons)
 * `playerctl` (for media control buttons)
 * `blutooth-applet`
+* `rofi`
+* `rofi-emoji`
 
 ### TODO
 
