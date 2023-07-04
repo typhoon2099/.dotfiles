@@ -31,6 +31,7 @@ Config for `i3-wm`, `i3status-rust`, and `picom`. Still a work in progress.
 * `wpctl` (to control audio volume)
 * `brightnessctl` (for brightness control buttons)
 * `playerctl` (for media control buttons)
+* `blutooth-applet`
 
 ### TODO
 
