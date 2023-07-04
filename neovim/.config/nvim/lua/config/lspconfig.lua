@@ -101,7 +101,6 @@ rt.setup({
     },
   },
 })
-require('crates').setup()
 
 -- Ruby
 lspconfig.solargraph.setup {
