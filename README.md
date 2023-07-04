@@ -28,19 +28,16 @@ Config for `i3-wm`, `i3status-rust`, and `picom`. Still a work in progress.
 * `i3status-rust`
 * `feh`
 * `nm-applet` (for managing network connections)
-* `pactl` (to control audio volume)
+* `wpctl` (to control audio volume)
 * `brightnessctl` (for brightness control buttons)
 * `playerctl` (for media control buttons)
 
 ### TODO
 
 * Power management
-* Fix KDE/Gnome theming
-* Bluetooth management (maybe? Or just use command line)
 * Prevent over-amplification for volume (don't allow > 100%) (wpctl)
 * Set default workspaces/windows for applications
 * Notifications
-* Emoji picker
 * Lock screen (better lock screen?)
 
 ## macos
@@ -86,15 +83,6 @@ which are manage by Plug Vim.
 * `typescript`
 * `typescript-language-server`
 * `yaml-language-server`
-
-### TODO
-
-* Vim emmet
-* Vim CSS autocomplete
-* Vim ESLint
-* Vim Stylelint
-* `vim-rails`
-* `vim-surround/vim-sandwich`
 
 ## terminal
 
