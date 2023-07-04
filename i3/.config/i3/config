@@ -192,7 +192,7 @@ set $orange #de844b
 bar {
   status_command ~/.cargo/bin/i3status-rs
   position top
-  font pango:Hack 12
+  font pango:Hack Nerd Font Mono 12
   colors {
     background $black
     focused_workspace $pink $pink $black
