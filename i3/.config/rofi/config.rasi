@@ -1,0 +1,13 @@
+configuration {
+  modi: "window,run,drun";
+  font: "Hack Nerd Font Mono 12";
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+

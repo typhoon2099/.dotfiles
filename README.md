@@ -34,13 +34,12 @@ Config for `i3-wm`, `i3status-rust`, and `picom`. Still a work in progress.
 * `blutooth-applet`
 * `rofi`
 * `rofi-emoji`
+* `dunst`
 
 ### TODO
 
 * Power management
-* Prevent over-amplification for volume (don't allow > 100%) (wpctl)
 * Set default workspaces/windows for applications
-* Notifications
 * Lock screen (better lock screen?)
 
 ## macos
@@ -86,6 +85,7 @@ which are manage by Plug Vim.
 * `typescript`
 * `typescript-language-server`
 * `yaml-language-server`
+* `tailwindcss-language-server`
 
 ## terminal
 
