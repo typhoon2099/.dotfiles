@@ -35,5 +35,9 @@ fi
 
 # Initialise tools
 eval "$(direnv hook zsh)"
+
+# Initialise RTX cli
 eval "$(rtx activate zsh)"
+eval "$(rtx completion zsh)"
+
 eval "$(starship init zsh)"
