@@ -5,8 +5,9 @@ source ~/.vimrc
 
 call plug#begin()
   Plug 'nvim-lua/plenary.nvim'
-  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+  Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
   Plug 'tpope/vim-commentary'
+  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
   " LSP Document Symbols
   Plug 'MunifTanjim/nui.nvim'
@@ -78,6 +79,7 @@ lua require("config.lualine")
 lua require("config.treesitter")
 lua require("config.telescope")
 lua require("config.nvim-autopairs")
+lua require("config.markdown-preview")
 lua require('import-cost').setup()
 lua require('nvim-highlight-colors').setup {}
 
