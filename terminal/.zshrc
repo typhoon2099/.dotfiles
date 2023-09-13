@@ -1,4 +1,12 @@
-source ~/.bash_aliases
+ALIASES=~/.bash_aliases
+if [[ -f "$ALIASES" ]]; then
+    source "$ALIASES"
+fi
+
+alias ll="ls -lia"
+alias vi="nvim"
+alias vim="nvim"
+alias fixup="git rebase --autosquash -i"
 
 autoload -Uz compinit && compinit && compinit
 
