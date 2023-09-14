@@ -16,6 +16,7 @@ avoid it being commited
 
 - Git
 - Neovim (for diff managing)
+- Delta (for viewing diffs, deb available on GitHub)
 
 ## i3
 

@@ -2,6 +2,7 @@
   editor = nvim
   autocrlf = input
   excludesFile = ~/.gitignore_global
+  pager = delta
 
 [commit]
   gpgsign = true
@@ -23,6 +24,7 @@
 
 [merge]
   tool = vimdiff
+  conflictstyle = diff3
 [mergetool]
   prompt = false
   keepBackup = false
@@ -45,11 +47,25 @@
 [help]
   autocorrect = 20
 
-[url "git@github.com"]
+[url "git@github.com:"]
   insteadOf = https://github.com
 [url "git@github.com"]
   insteadOf = gh
 [url "git@github.com:typhoon2099/"]
   insteadOf = me:
 [log]
-	follow = true
+  follow = true
+
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true
+  line-numbers = true
+  side-by-side = true
+  map-styles = \
+       bold purple => syntax "#330f29", \
+       bold blue => syntax "#271344", \
+       bold cyan => syntax "#0d3531", \
+       bold yellow => syntax "#222f14"
+[diff]
+  colorMoved = default
