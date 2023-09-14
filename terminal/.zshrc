@@ -49,3 +49,5 @@ eval "$(rtx activate zsh)"
 eval "$(rtx completion zsh)"
 
 eval "$(starship init zsh)"
+
+typeset -U path PATH
