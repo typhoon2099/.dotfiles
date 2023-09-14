@@ -8,8 +8,6 @@ alias vi="nvim"
 alias vim="nvim"
 alias fixup="git rebase --autosquash -i"
 
-autoload -Uz compinit && compinit && compinit
-
 # Escape pasted URLs
 autoload -Uz url-quote-magic
 zle -N self-insert url-quote-magic
@@ -44,6 +42,9 @@ LOCAL_CONFIG=~/.local.zshrc
 if [[ -f "$LOCAL_CONFIG" ]]; then
     source "$LOCAL_CONFIG"
 fi
+
+# Start completion
+autoload -Uz compinit && compinit
 
 # Initialise tools
 eval "$(direnv hook zsh)"
