@@ -85,3 +85,7 @@ lua require('nvim-highlight-colors').setup {}
 
 " Vim Test
 source ~/.config/nvim/vim-test.vim
+
+let g:mkdp_auto_close = 0
+let g:mkdp_auto_start = 0
+nmap <leader>mm <Plug>MarkdownPreviewToggle
