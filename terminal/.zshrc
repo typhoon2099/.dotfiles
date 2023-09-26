@@ -32,16 +32,16 @@ export SAVEHIST=10000
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#A06D7E"
 
+LOCAL_CONFIG=~/.local.zshrc
+if [[ -f "$LOCAL_CONFIG" ]]; then
+    source "$LOCAL_CONFIG"
+fi
+
 # Use GPG for SSH
 export GPG_TTY=$(tty)
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=1"
-
-LOCAL_CONFIG=~/.local.zshrc
-if [[ -f "$LOCAL_CONFIG" ]]; then
-    source "$LOCAL_CONFIG"
-fi
 
 # Start completion
 autoload -Uz compinit && compinit
