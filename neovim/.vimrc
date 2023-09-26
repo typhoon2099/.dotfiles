@@ -40,3 +40,5 @@ set completeopt=menu,menuone,preview,noselect,noinsert
 
 " Disable mouse
 set mouse=
+
+set cursorline
