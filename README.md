@@ -121,3 +121,4 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 * .xprofile (sets KDE styling)
 * install script (Nix? Ansible?)
 * Unify colours across everything (X11 colours?)
+* A nicer lock screen?
