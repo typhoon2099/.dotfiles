@@ -1,0 +1,43 @@
+* {
+  white: #F5E1E8;
+  pink: #DD95AD;
+  dark-pink: #8D2E4D;
+  dark: #251C1F;
+  background-color: transparent;
+}
+
+window {
+  background-color: @dark;
+  border: 3px;
+  border-color: @pink;
+}
+
+inputbar {
+  padding: 5px;
+  children: [ entry ];
+}
+
+entry {
+  text-color: @pink;
+}
+
+element {
+  padding: 5px;
+  spacing: 5px;
+  children: [element-icon, element-text];
+}
+
+element selected {
+  background-color: @dark-pink;
+}
+
+element-text {
+  text-color: @white;
+  vertical-align: 0.5;
+}
+
+element-icon {
+  size: 1.5em;
+}
+
+/* vim:ft=css

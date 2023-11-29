@@ -1,13 +1,16 @@
 configuration {
   modi: "window,run,drun";
-  font: "Hack Nerd Font Mono 12";
+  font: "Hack Nerd Font Mono 14";
   timeout {
-      action: "kb-cancel";
-      delay:  0;
+    action: "kb-cancel";
+    delay:  0;
   }
   filebrowser {
-      directories-first: true;
-      sorting-method:    "name";
+    directories-first: true;
+    sorting-method:    "name";
   }
 }
 
+@theme "mytheme"
+
+/* vim:ft=css
