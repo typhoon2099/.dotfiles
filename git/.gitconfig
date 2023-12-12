@@ -36,6 +36,9 @@
   autoStash = true
   abbreviateCommands = true
 
+[worktree]
+  guessRemote = true
+
 [alias]
   tidyup = "!git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
   l = "log --oneline --graph"
