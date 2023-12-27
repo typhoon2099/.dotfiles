@@ -193,8 +193,10 @@ bar {
   status_command ~/.cargo/bin/i3status-rs
   position top
   font pango:Hack Nerd Font Mono 12
+  binding_mode_indicator yes
   colors {
     background $black
+
     focused_workspace $pink $pink $black
     active_workspace #ff0000 #ff0000 #ff0000
     inactive_workspace $black $black $pink
