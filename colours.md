@@ -1,37 +1,40 @@
-# Color theme gradient
+# Colors
 
-Use colours from [here](https://coolors.co/dd95ad)
+Primary: #dd95ad
+Background: #251c1f
 
-#DD95AD
-#BE8195
-#A06D7E
-#815966
-#62444E
-#443037
-#251C1F
+Secondary: #8d2e4d
+Compliment: #f1d2dc
+
+## Shades/Tints/Tones
+
+#dd95ad    #dd95ad    #dd95ad
+#d7839f    #e09eb4    #db9aaf
+#d06f8f    #e2a6ba    #d89cb0
+#ca5b80    #e4adc0    #d69fb1
+#c34770    #e7b5c5    #d3a1b2
+#b53b63    #e9bccb    #d1a4b3
+#a13458    #ecc4d1    #cea6b3
+#8d2e4d    #eecbd7    #cca9b4
+#782742    #f1d2dc    #c9abb5
+#642137    #f3dae2    #c7aeb6
+#501a2c    #f5e1e8    #c4b0b7
+#3c1421    #f8e9ee    #c2b3b8
+#280d16    #faf0f3    #bfb5b8
+#14070b    #fdf8f9    #bdb8b9
+#000000    #ffffff    #bababa
 
 # Terminal Colours
 
-Foreground: #DD95AD
-Background: #251C1F
+Foreground: #dd95ad
+Background: #251c1f
 
-  normal: #(0-7)
-    black:   #3f3136
-    red:     #de6f89
-    green:   #6fde7e
-    yellow:  #debd6f
-    blue:    #6fb1de
-    magenta: #c86fde
-    cyan:    #6fded3
-    white:   #64b1de
-
-  # Bright colors
-  bright: #(8-15)
-    black:   #ddaabb
-    red:     #de6f89
-    green:   #6fde7e
-    yellow:  #debd6f
-    blue:    #6fb1de
-    magenta: #c86fde
-    cyan:    #6fded3
-    white:   #64b1de
+pink:    #ddaabb
+black:   #3f3136
+red:     #de6f6f
+green:   #83de6f
+yellow:  #decf6f
+blue:    #6facde
+magenta: #a16fde
+cyan:    #6fded5
+white:   #6facde
