@@ -184,7 +184,9 @@ bindsym $mod+r mode "Resize"
 
 # Colours 1
 set $black  #251c1f
+set $lightpink  #f1d2dc
 set $pink   #dd95ad
+set $darkpink #8d2e4d
 set $grey   #797979
 set $orange #de844b
 
@@ -200,7 +202,7 @@ bar {
     focused_workspace $pink $pink $black
     active_workspace #ff0000 #ff0000 #ff0000
     inactive_workspace $black $black $pink
-    urgent_workspace $orange $orange $black
+    urgent_workspace $darkpink $darkpink $lightpink
     binding_mode $pink $pink $black
   }
 }

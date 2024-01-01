@@ -1,23 +1,23 @@
 local navic = require("nvim-navic")
 
 local colors = {
-  black        = '#282828',
-  red          = '#dd6e6e',
-  green        = '#8bde6f',
-  blue         = '#6fb1de',
-  yellow       = '#debd6f',
-  pink         = '#dd95ad',
-  magenta      = '#8d2e4d',
-  brown        = '#251c1f',
+  primary      = '#dd95ad',
+  secondary    = '#8d2e4d',
+  black        = '#3f3136',
+  red          = '#de6f6f',
+  green        = '#83de6f',
+  blue         = '#6facde',
+  yellow       = '#decf6f',
+  background   = '#251c1f',
   lightpink    = '#f1d2dc',
   white        = '#ffffff',
 }
 
 local theme = {
   normal = {
-    a = { bg = colors.pink, fg = colors.brown, gui = 'bold' },
-    b = { bg = colors.magenta, fg = colors.lightpink },
-    c = { bg = "default", fg = colors.pink },
+    a = { bg = colors.primary, fg = colors.background, gui = 'bold' },
+    b = { bg = colors.secondary, fg = colors.lightpink },
+    c = { bg = "default", fg = colors.primary },
   },
   insert = {
     a = { bg = colors.blue, fg = colors.black, gui = 'bold' },
@@ -32,7 +32,7 @@ local theme = {
     a = { bg = colors.green, fg = colors.black, gui = 'bold' },
   },
   inactive = {
-    a = { bg = colors.brown, fg = colors.pink, gui = 'bold' },
+    a = { bg = colors.background, fg = colors.primary, gui = 'bold' },
   }
 }
 

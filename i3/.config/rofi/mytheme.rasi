@@ -1,8 +1,8 @@
 * {
-  white: #F5E1E8;
-  pink: #DD95AD;
-  dark-pink: #8D2E4D;
-  dark: #251C1F;
+  white: #f1d2dc;
+  pink: #dd95ad;
+  dark-pink: #8d2e4d;
+  dark: #251c1f;
   background-color: transparent;
 }
 

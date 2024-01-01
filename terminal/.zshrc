@@ -30,7 +30,7 @@ export SAVEHIST=10000
 
 # ZSH Autosuggestions
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#A06D7E"
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#d06f8f"
 
 LOCAL_CONFIG=~/.local.zshrc
 if [[ -f "$LOCAL_CONFIG" ]]; then
@@ -40,8 +40,6 @@ fi
 # Use GPG for SSH
 export GPG_TTY=$(tty)
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=1"
 
 # Start completion
 autoload -Uz compinit && compinit

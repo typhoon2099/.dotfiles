@@ -9,10 +9,10 @@ idle_fg = "#dd95ad"
 good_bg = "#251c1f"
 good_fg = "#dd95ad"
 
-warning_bg = "#de844b"
-warning_fg = "#251c1f"
+warning_bg = "#8d2e4d"
+warning_fg = "#f1d2dc"
 
-critical_bg = "#dd4c4c"
+critical_bg = "#de6f6f"
 critical_fg = "#251c1f"
 
 info_bg = "#251c1f"

@@ -59,9 +59,9 @@ local on_attach = function(client, bufnr)
       desc = "Clear All the References",
     })
     vim.api.nvim_exec([[
-      hi LspReferenceRead cterm=bold guibg=#62444e
-      hi LspReferenceText cterm=bold guibg=#62444e
-      hi LspReferenceWrite cterm=bold guibg=#62444e
+      hi LspReferenceRead cterm=bold guibg=#290d16
+      hi LspReferenceText cterm=bold guibg=#290d16
+      hi LspReferenceWrite cterm=bold guibg=#290d16
     ]], false)
   end
 end

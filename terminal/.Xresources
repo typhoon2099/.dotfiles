@@ -13,35 +13,35 @@ XTerm.vt100.colorBDMode: true
 
 ! black
 *.color0:       #3f3136
-*.color8:       #ddaabb
+*.color8:       #3f3136
 
 ! red
-*.color1:       #dd4c4c
-*.color9:       #dd6e6e
+*.color1:       #de6f6f
+*.color9:       #de6f6f
 
 ! green
-*.color2:       #71de4e
-*.color10:      #8bde6f
+*.color2:       #83de6f
+*.color10:      #83de6f
 
 ! yellow
-*.color3:       #de844b
-*.color11:      #debd6f
+*.color3:       #decf6f
+*.color11:      #decf6f
 
 ! blue
-*.color4:       #4e9bde
-*.color12:      #6fb1de
+*.color4:       #6facfe
+*.color12:      #6facfe
 
 ! magenta
-*.color5:       #bc4ede
-*.color13:      #c86fde
+*.color5:       #a16fde
+*.color13:      #a16fde
 
 ! cyan
-*.color6:       #4eded2
-*.color14:      #6fded3
+*.color6:       #6fded5
+*.color14:      #6fded5
 
 ! white
-*.color7:       #4e9bde
-*.color15:      #64b1de
+*.color7:       #6facde
+*.color15:      #6facde
 
 *.faceName: Hack
 *.faceSize: 11
