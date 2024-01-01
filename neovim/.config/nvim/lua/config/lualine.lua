@@ -7,14 +7,16 @@ local colors = {
   blue         = '#6fb1de',
   yellow       = '#debd6f',
   pink         = '#dd95ad',
+  magenta      = '#8d2e4d',
   brown        = '#251c1f',
+  lightpink    = '#f1d2dc',
   white        = '#ffffff',
 }
 
 local theme = {
   normal = {
     a = { bg = colors.pink, fg = colors.brown, gui = 'bold' },
-    b = { bg = "#8D2E4D", fg = "#F1D2DC" },
+    b = { bg = colors.magenta, fg = colors.lightpink },
     c = { bg = "default", fg = colors.pink },
   },
   insert = {
