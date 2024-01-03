@@ -71,9 +71,8 @@ highlight Normal guibg=none
 highlight NonText guibg=none
 highlight! link CmpItemKindDefault Normal
 
-source ~/.config/nvim/fugitive.vim
-source ~/.config/nvim/gitgutter.vim
-
+lua require("config.fugitive")
+lua require("config.gitgutter")
 lua require("config.cellular-automaton")
 lua require("config.cmp")
 lua require("config.crates")
