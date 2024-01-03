@@ -53,7 +53,10 @@ call plug#begin()
   Plug 'tpope/vim-fugitive'
 
   " Testing Stuff
-  Plug 'vim-test/vim-test'
+  Plug 'nvim-neotest/neotest'
+  Plug 'nvim-neotest/neotest-jest'
+  Plug 'olimorris/neotest-rspec'
+  Plug 'rouge8/neotest-rust'
 
   " Terraform Stuff
   Plug 'hashivim/vim-terraform'
@@ -80,11 +83,9 @@ lua require("config.treesitter")
 lua require("config.telescope")
 lua require("config.nvim-autopairs")
 lua require("config.markdown-preview")
+lua require("config.neotest")
 lua require('import-cost').setup()
 lua require('nvim-highlight-colors').setup {}
-
-" Vim Test
-source ~/.config/nvim/vim-test.vim
 
 let g:mkdp_auto_close = 0
 let g:mkdp_auto_start = 0
