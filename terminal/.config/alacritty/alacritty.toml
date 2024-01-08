@@ -1,0 +1,71 @@
+live_config_reload = true
+
+[colors.bright]
+black = "0xddaabb"
+blue = "0x6facde"
+cyan = "0x6fded5"
+green = "0x83de6f"
+magenta = "0xa16fde"
+red = "0xde6f6f"
+white = "0x6facde"
+yellow = "0xdecf6f"
+
+[colors.normal]
+black = "0x14070b"
+blue = "0x6facde"
+cyan = "0x6fded5"
+green = "0x83de6f"
+magenta = "0xa16fde"
+red = "0xde6f6f"
+white = "0x6facde"
+yellow = "0xdecf6f"
+
+[colors.primary]
+background = "0x251c1f"
+foreground = "0xdd95ad"
+
+[font]
+size = 12.0
+
+[font.normal]
+family = "Hack Nerd Font Mono"
+
+[[keyboard.bindings]]
+chars = "\u001Bb"
+key = "Left"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u001Bf"
+key = "Right"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u001Bb"
+key = "Left"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001Bf"
+key = "Right"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mode = "~Vi"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[window]
+dynamic_padding = true
+opacity = 0.9
+option_as_alt = "Both"
+
+[window.padding]
+x = 3
+y = 2
