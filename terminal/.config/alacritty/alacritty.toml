@@ -24,6 +24,9 @@ yellow = "0xdecf6f"
 background = "0x251c1f"
 foreground = "0xdd95ad"
 
+[env]
+WINIT_X11_SCALE_FACTOR = "1.0"
+
 [font]
 size = 12.0
 
