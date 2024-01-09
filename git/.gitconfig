@@ -21,6 +21,7 @@
   rebase = true
 [push]
   default = current
+  autoSetupRemote = true
 
 [merge]
   tool = vimdiff
