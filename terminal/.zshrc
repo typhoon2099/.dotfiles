@@ -47,9 +47,9 @@ autoload -Uz compinit && compinit
 # Initialise tools
 eval "$(direnv hook zsh)"
 
-# Initialise RTX cli
-eval "$(rtx activate zsh)"
-eval "$(rtx completion zsh)"
+# Initialise Mise cli
+eval "$(mise activate zsh)"
+eval "$(mise completion zsh)"
 
 eval "$(starship init zsh)"
 

@@ -17,7 +17,7 @@ brew "entr"
 
 # Version Managers
 brew "git"
-brew "rtx"
+brew "mise"
 
 # Other
 brew "gnupg"
