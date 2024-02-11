@@ -36,6 +36,7 @@ Config for `i3-wm`, `i3status-rust`, and `picom`. Still a work in progress.
 * `rofi`
 * `rofi-emoji`
 * `dunst`
+* `spectacle`
 
 ### TODO
 
