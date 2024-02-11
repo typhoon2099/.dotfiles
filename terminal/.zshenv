@@ -1,7 +1,5 @@
-if ! [[ "$PATH" =~ ":$HOME/.local/bin" ]]
-then
-  export PATH="$HOME/.local/bin:$PATH"
-fi
+typeset -U path PATH
+path+=("$HOME/.local/bin")
 . "$HOME/.cargo/env"
 
 if [ "$XDG_CURRENT_DESKTOP" = "i3" ]; then

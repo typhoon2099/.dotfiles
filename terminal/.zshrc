@@ -52,5 +52,3 @@ eval "$(mise activate zsh)"
 eval "$(mise completion zsh)"
 
 eval "$(starship init zsh)"
-
-typeset -U path PATH
