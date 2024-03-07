@@ -7,6 +7,11 @@ alias ll="ls -lia"
 alias vi="nvim"
 alias vim="nvim"
 alias fixup="git rebase -i origin/HEAD"
+alias session="tmux list-sessions -F \"#{session_name}\" -f \"#{session_attached}\""
+
+wt() {
+  git worktree add $(session) --no-track
+}
 
 # Escape pasted URLs
 autoload -Uz url-quote-magic
