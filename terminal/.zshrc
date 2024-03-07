@@ -37,6 +37,8 @@ export SAVEHIST=10000
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#d06f8f"
 
+export EDITOR=nvim
+
 LOCAL_CONFIG=~/.local.zshrc
 if [[ -f "$LOCAL_CONFIG" ]]; then
     source "$LOCAL_CONFIG"
