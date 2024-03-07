@@ -6,7 +6,7 @@ fi
 alias ll="ls -lia"
 alias vi="nvim"
 alias vim="nvim"
-alias fixup="git rebase --autosquash -i"
+alias fixup="git rebase -i origin/HEAD"
 
 # Escape pasted URLs
 autoload -Uz url-quote-magic
