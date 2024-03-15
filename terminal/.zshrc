@@ -10,7 +10,13 @@ alias fixup="git rebase -i origin/HEAD"
 alias session="tmux list-sessions -F \"#{session_name}\" -f \"#{session_attached}\""
 
 wt() {
+  git fetch
   git worktree add $(session) --no-track
+}
+
+gb() {
+  git fetch
+  git checkout -b $(session) origin/HEAD --no-track
 }
 
 # Escape pasted URLs
