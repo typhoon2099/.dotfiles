@@ -25,6 +25,7 @@ zle -N self-insert url-quote-magic
 autoload -Uz bracketed-paste-magic
 zle -N bracketed-paste bracketed-paste-magic
 
+bindkey -e
 bindkey " " magic-space
 
 setopt HIST_EXPIRE_DUPS_FIRST
@@ -55,7 +56,9 @@ export GPG_TTY=$(tty)
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 
 # Start completion
-autoload -Uz compinit && compinit
+autoload -Uz compinit bashcompinit
+compinit
+bashcompinit
 
 # Initialise tools
 eval "$(direnv hook zsh)"
