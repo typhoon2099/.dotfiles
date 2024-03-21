@@ -49,7 +49,7 @@ call plug#begin()
   Plug 'brenoprata10/nvim-highlight-colors'
 
   " Git Stuff
-  Plug 'airblade/vim-gitgutter'
+  Plug 'lewis6991/gitsigns.nvim'
   Plug 'tpope/vim-fugitive'
 
   " Testing Stuff
@@ -72,7 +72,7 @@ highlight NonText guibg=none
 highlight! link CmpItemKindDefault Normal
 
 lua require("config.fugitive")
-lua require("config.gitgutter")
+lua require("config.gitsigns")
 lua require("config.cellular-automaton")
 lua require("config.cmp")
 lua require("config.crates")
