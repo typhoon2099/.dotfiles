@@ -90,3 +90,8 @@ let g:mkdp_auto_close = 0
 let g:mkdp_auto_start = 0
 nmap <leader>mm <Plug>MarkdownPreviewToggle
 set undofile
+
+nnoremap <leader>bi :!bundle init<CR>
+nnoremap <leader>bb :!bundle install<CR>
+nnoremap <expr> <leader>ba ":!bundle add " .input("Add Gem: "). "<CR>"
+nnoremap <expr> <leader>br ":!bundle remove " .input("Remove Gem: "). "<CR>"
