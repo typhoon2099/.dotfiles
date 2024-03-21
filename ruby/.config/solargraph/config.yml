@@ -1,0 +1,16 @@
+plugins:
+- solargraph-reek
+- solargraph-rails
+- solargraph_test_coverage
+
+reporters:
+- reek
+- require_not_found
+- typecheck
+- update_errors
+- test_coverage
+- example_status
+
+test_coverage:
+  preload_rails: false
+  debug: true
