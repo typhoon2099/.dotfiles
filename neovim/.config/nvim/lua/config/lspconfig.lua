@@ -19,6 +19,10 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, opts)
 local on_attach = function(client, bufnr)
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
+  if client.name == 'solargraph' then
+    client.server_capabilities.documentFormattingProvider = false
+  end
+
   if client.server_capabilities.documentSymbolProvider then
     navic.attach(client, bufnr)
     vim.keymap.set('n', '<leader>nn', navbuddy.open, opts)
@@ -117,6 +121,11 @@ lspconfig.solargraph.setup {
   capabilities = capabilities,
 }
 
+lspconfig.typeprof.setup{
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
 -- HTML/CSS/JS
 lspconfig.cssls.setup {
   on_attach = on_attach,
@@ -172,3 +181,4 @@ lspconfig.yamlls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
+
