@@ -121,11 +121,6 @@ lspconfig.solargraph.setup {
   capabilities = capabilities,
 }
 
-lspconfig.typeprof.setup{
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
-
 -- HTML/CSS/JS
 lspconfig.cssls.setup {
   on_attach = on_attach,
