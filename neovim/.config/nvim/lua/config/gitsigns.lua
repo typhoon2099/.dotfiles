@@ -1,7 +1,7 @@
 require('gitsigns').setup {
   signcolumn = true,
   numhl = true,
-  word_diff = true,
+  word_diff = false,
   current_line_blame = true,
   current_line_blame_formatter = '<abbrev_sha> <author> <committer_time> <summary>',
   on_attach = function(bufnr)
