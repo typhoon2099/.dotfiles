@@ -28,6 +28,9 @@ zle -N bracketed-paste bracketed-paste-magic
 bindkey -e
 bindkey " " magic-space
 
+bindkey '^p' history-search-backward
+bindkey '^n' history-search-forward
+
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 setopt HIST_EXPIRE_DUPS_FIRST
