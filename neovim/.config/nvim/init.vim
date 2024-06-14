@@ -54,9 +54,11 @@ call plug#begin()
 
   " Testing Stuff
   Plug 'nvim-neotest/neotest'
+  Plug 'nvim-neotest/nvim-nio'
   Plug 'nvim-neotest/neotest-jest'
   Plug 'olimorris/neotest-rspec'
   Plug 'rouge8/neotest-rust'
+  Plug 'antoinemadec/FixCursorHold.nvim'
 
   " Terraform Stuff
   Plug 'hashivim/vim-terraform'
