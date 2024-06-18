@@ -28,6 +28,10 @@ local on_attach = function(client, bufnr)
     vim.keymap.set('n', '<leader>nn', navbuddy.open, opts)
   end
 
+  if client.server_capabilities.inlayHintProvider then
+    vim.lsp.inlay_hint.enable(true, { bufnr })
+  end
+
   local opts = { noremap = true, silent = true, buffer = bufnr }
 
   vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
@@ -123,6 +127,10 @@ lspconfig.solargraph.setup {
 }
 
 -- HTML/CSS/JS
+lspconfig.biome.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
 lspconfig.cssls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
@@ -184,4 +192,3 @@ lspconfig.yamlls.setup {
     },
   },
 }
-
