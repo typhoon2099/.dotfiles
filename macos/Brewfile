@@ -1,5 +1,4 @@
 # Neovim Stuff
-brew "neovim"
 brew "ripgrep"
 brew "fd"
 brew "lua-language-server"
