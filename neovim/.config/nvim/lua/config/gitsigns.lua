@@ -4,6 +4,9 @@ require('gitsigns').setup {
   word_diff = false,
   current_line_blame = true,
   current_line_blame_formatter = '<abbrev_sha> <author> <committer_time> <summary>',
+  current_line_blame_opts = {
+    virt_text_pos = 'right_align',
+  },
   on_attach = function(bufnr)
     local gs = package.loaded.gitsigns
 
@@ -37,7 +40,6 @@ require('gitsigns').setup {
     map('n', '<leader>hp', gs.preview_hunk)
     map('n', '<leader>hb', function() gs.blame_line { full = true } end)
     map('n', '<leader>tb', gs.toggle_current_line_blame)
-    map('n', '<leader>hd', gs.diffthis)
     map('n', '<leader>hD', function() gs.diffthis('~') end)
     map('n', '<leader>gd', gs.toggle_deleted)
     map('n', '<leader>tl', gs.toggle_linehl)
@@ -47,3 +49,4 @@ require('gitsigns').setup {
     map({ 'o', 'x' }, 'ih', ':<C-U>Gitsigns select_hunk<CR>')
   end
 }
+
