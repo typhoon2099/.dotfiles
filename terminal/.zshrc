@@ -12,6 +12,7 @@ alias session="tmux list-sessions -F \"#{session_name}\" -f \"#{session_attached
 wt() {
   git fetch
   git worktree add $(session) --no-track
+  cd $(session)
 }
 
 gb() {
