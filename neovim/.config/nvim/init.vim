@@ -8,6 +8,7 @@ call plug#begin()
   Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
   Plug 'tpope/vim-commentary'
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+  Plug 'krivahtoo/silicon.nvim', { 'do': './install.sh' }
 
   " LSP Document Symbols
   Plug 'MunifTanjim/nui.nvim'
@@ -25,6 +26,7 @@ call plug#begin()
 
   " LSP
   Plug 'neovim/nvim-lspconfig'
+  Plug 'nvim-lua/lsp-status.nvim'
 
   " Completion Stuff
   Plug 'hrsh7th/nvim-cmp'
@@ -84,6 +86,7 @@ lua require("config.treesitter")
 lua require("config.telescope")
 lua require("config.nvim-autopairs")
 lua require("config.markdown-preview")
+lua require("config.silicon")
 lua require("config.neotest")
 lua require('import-cost').setup()
 lua require('nvim-highlight-colors').setup {}
