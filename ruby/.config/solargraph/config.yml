@@ -1,15 +1,15 @@
 plugins:
 - solargraph-reek
 - solargraph-rails
-- solargraph_test_coverage
 
 reporters:
 - reek
 - require_not_found
 - typecheck
 - update_errors
-- test_coverage
-- example_status
+
+exclude:
+- "node_modules/**/*.rb"
 
 test_coverage:
   preload_rails: false
