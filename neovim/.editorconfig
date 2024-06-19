@@ -10,3 +10,7 @@ trim_trailing_whitespace = true
 
 [*.rs]
 indent_size = 4
+
+[*.p{l,m}]
+indent_style = tab
+indent_size = 2
