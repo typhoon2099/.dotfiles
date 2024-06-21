@@ -26,7 +26,7 @@ cmp.setup({
     { name = 'nvim_lsp_signature_help' },
     { name = 'vsnip' },
     { name = "crates" },
-    { name = "path" },
+    { name = 'path', option = { trailing_slash = false } },
     { name = "emoji" },
   }, {
     { name = 'buffer' },
@@ -48,7 +48,7 @@ cmp.setup.cmdline('/', {
 cmp.setup.cmdline(':', {
   mapping = cmp.mapping.preset.cmdline({}),
   sources = cmp.config.sources({
-    { name = 'path' }
+    { name = 'path', option = { trailing_slash = false } }
   }, {
     { name = 'cmdline' }
   })
