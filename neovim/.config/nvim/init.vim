@@ -70,10 +70,11 @@ call plug#begin()
 call plug#end()
 
 " Colour Options
+colorscheme vim
 colorscheme strawberry-dark
-highlight Normal guibg=none
 highlight NonText guibg=none
 highlight! link CmpItemKindDefault Normal
+highlight Normal guibg=none
 
 lua require("config.fugitive")
 lua require("config.gitsigns")
