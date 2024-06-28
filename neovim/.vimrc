@@ -18,10 +18,9 @@ set smartindent
 set shiftround
 
 " Folding
-set nofoldenable
 set foldmethod=expr
 set foldexpr=nvim_treesitter#foldexpr()
-set foldcolumn=3
+set foldcolumn=0
 set foldlevel=10
 
 set nowrap
