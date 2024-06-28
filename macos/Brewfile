@@ -25,7 +25,7 @@ brew "stow"
 
 # Apps
 cask "firefox"
-cask "iterm2"
+cask "alacritty"
 cask "chromium"
 cask "keepassxc"
 cask "postman"
