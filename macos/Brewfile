@@ -1,7 +1,6 @@
 # Neovim Stuff
 brew "ripgrep"
 brew "fd"
-brew "lua-language-server"
 
 # Terminal Stuff
 brew "starship"

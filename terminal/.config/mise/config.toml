@@ -1,0 +1,9 @@
+[alias]
+
+[tools]
+ruby = "latest"
+node = "latest"
+neovim = "latest"
+python = "latest"
+perl = "latest"
+lua-language-server = "latest"
