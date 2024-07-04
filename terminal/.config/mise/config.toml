@@ -1,9 +1,11 @@
 [alias]
 
 [tools]
+usage = "latest"
 ruby = "latest"
 node = "latest"
 neovim = "latest"
 python = "latest"
 perl = "latest"
+pnpm = "latest"
 lua-language-server = "latest"
