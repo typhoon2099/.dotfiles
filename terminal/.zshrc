@@ -11,7 +11,7 @@ alias session="tmux list-sessions -F \"#{session_name}\" -f \"#{session_attached
 
 wt() {
   git fetch
-  git worktree add $(session) --no-track
+  git worktree add -b $(session) $(session) origin/HEAD
   cd $(session)
 }
 
