@@ -1,3 +1,4 @@
+vim.cmd([[
 " Get Vim config
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath=&runtimepath
@@ -76,22 +77,6 @@ highlight NonText guibg=none
 highlight! link CmpItemKindDefault Normal
 highlight Normal guibg=none
 
-lua require("config.fugitive")
-lua require("config.gitsigns")
-lua require("config.cellular-automaton")
-lua require("config.cmp")
-lua require("config.crates")
-lua require("config.lspconfig")
-lua require("config.lualine")
-lua require("config.treesitter")
-lua require("config.telescope")
-lua require("config.nvim-autopairs")
-lua require("config.markdown-preview")
-lua require("config.silicon")
-lua require("config.neotest")
-lua require('import-cost').setup()
-lua require('nvim-highlight-colors').setup {}
-
 let g:mkdp_auto_close = 0
 let g:mkdp_auto_start = 0
 nmap <leader>mm <Plug>MarkdownPreviewToggle
@@ -101,3 +86,19 @@ nnoremap <leader>bi :!bundle init<CR>
 nnoremap <leader>bb :!bundle install<CR>
 nnoremap <expr> <leader>ba ":!bundle add " .input("Add Gem: "). "<CR>"
 nnoremap <expr> <leader>br ":!bundle remove " .input("Remove Gem: "). "<CR>"
+]])
+require("config.fugitive")
+require("config.gitsigns")
+require("config.cellular-automaton")
+require("config.cmp")
+require("config.crates")
+require("config.lspconfig")
+require("config.lualine")
+require("config.treesitter")
+require("config.telescope")
+require("config.nvim-autopairs")
+require("config.markdown-preview")
+require("config.silicon")
+require("config.neotest")
+require('import-cost').setup()
+require('nvim-highlight-colors').setup {}
