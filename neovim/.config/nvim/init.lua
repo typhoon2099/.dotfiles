@@ -77,9 +77,6 @@ highlight NonText guibg=none
 highlight! link CmpItemKindDefault Normal
 highlight Normal guibg=none
 
-let g:mkdp_auto_close = 0
-let g:mkdp_auto_start = 0
-nmap <leader>mm <Plug>MarkdownPreviewToggle
 set undofile
 
 nnoremap <leader>bi :!bundle init<CR>
