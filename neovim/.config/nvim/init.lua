@@ -84,12 +84,12 @@ vim.api.nvim_set_keymap('n', '<leader>bb', ':!bundle install<CR>', { noremap = t
 vim.keymap.set('n', '<leader>ba', function()
   local gem_name = vim.fn.input("Add Gem: ")
 
-  vim.cmd('!bundle add '..gem_name)
+  vim.cmd('!bundle add ' .. gem_name)
 end, { noremap = true, silent = false })
 vim.keymap.set('n', '<leader>br', function()
   local gem_name = vim.fn.input("Remove Gem: ")
 
-  vim.cmd('!bundle remove '..gem_name)
+  vim.cmd('!bundle remove ' .. gem_name)
 end, { noremap = true, silent = false })
 
 vim.opt.undofile = true
