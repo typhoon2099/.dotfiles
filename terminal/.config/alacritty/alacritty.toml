@@ -30,7 +30,7 @@ WINIT_X11_SCALE_FACTOR = "1.0"
 size = 12.0
 
 [font.normal]
-family = "Hack Nerd Font Mono"
+family = "Hack Nerd Font"
 
 [[keyboard.bindings]]
 chars = "\u001Bb"
