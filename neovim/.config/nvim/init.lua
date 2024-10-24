@@ -76,26 +76,38 @@ colorscheme strawberry-dark
 highlight NonText guibg=none
 highlight! link CmpItemKindDefault Normal
 highlight Normal guibg=none
-
-set undofile
-
-nnoremap <leader>bi :!bundle init<CR>
-nnoremap <leader>bb :!bundle install<CR>
-nnoremap <expr> <leader>ba ":!bundle add " .input("Add Gem: "). "<CR>"
-nnoremap <expr> <leader>br ":!bundle remove " .input("Remove Gem: "). "<CR>"
 ]])
-require("config.fugitive")
-require("config.gitsigns")
-require("config.cellular-automaton")
-require("config.cmp")
-require("config.crates")
-require("config.lspconfig")
-require("config.lualine")
-require("config.treesitter")
-require("config.telescope")
-require("config.nvim-autopairs")
-require("config.markdown-preview")
-require("config.silicon")
-require("config.neotest")
+
+-- Bundler keymaps
+vim.api.nvim_set_keymap('n', '<leader>bi', ':!bundle init<CR>', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', '<leader>bb', ':!bundle install<CR>', { noremap = true, silent = false })
+vim.keymap.set('n', '<leader>ba', function()
+  local gem_name = vim.fn.input("Add Gem: ")
+
+  vim.cmd('!bundle add '..gem_name)
+end, { noremap = true, silent = false })
+vim.keymap.set('n', '<leader>br', function()
+  local gem_name = vim.fn.input("Remove Gem: ")
+
+  vim.cmd('!bundle remove '..gem_name)
+end, { noremap = true, silent = false })
+
+vim.opt.undofile = true
+
+-- Load configs
+
+require('config.fugitive')
+require('config.gitsigns')
+require('config.cellular-automaton')
+require('config.cmp')
+require('config.crates')
+require('config.lspconfig')
+require('config.lualine')
+require('config.treesitter')
+require('config.telescope')
+require('config.nvim-autopairs')
+require('config.markdown-preview')
+require('config.silicon')
+require('config.neotest')
 require('import-cost').setup()
 require('nvim-highlight-colors').setup {}
