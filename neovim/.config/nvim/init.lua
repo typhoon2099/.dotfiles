@@ -1,50 +1,51 @@
+vim.opt.background = 'dark'
+vim.opt.termguicolors = true
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.emoji = true
+vim.opt.tw = 80
+vim.opt.list = true
+vim.opt.hlsearch = false
+vim.opt.hidden = true
+vim.opt.swapfile = false
+vim.g.mapleader = ' '
+
+-- Indentation
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.expandtab = true
+vim.opt.smartindent = true
+vim.opt.shiftround = true
+
+-- Folding
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+vim.opt.foldcolumn = 'auto:3'
+vim.opt.foldlevel = 10
+
+vim.opt.wrap = false
+vim.opt.colorcolumn = '80'
+vim.opt.scrolloff = 8
+vim.opt.signcolumn = 'yes'
+vim.opt.encoding = 'UTF-8'
+
+vim.opt.updatetime = 50
+
+vim.opt.completeopt = 'menu,menuone,preview,noselect,noinsert'
+
+-- Disable mouse
+vim.opt.mouse = ''
+
+vim.opt.cursorline = true
+
 vim.cmd([[
 " Get Vim config
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath=&runtimepath
-set background=dark
-set termguicolors
-set number
-set relativenumber
-set emoji
-set tw=80
-set list
-set nohlsearch
-set hidden
-set noswapfile
-let mapleader=" "
-
-" Indentation
-set tabstop=4 softtabstop=4
-set shiftwidth=2
-set expandtab
-set smartindent
-set shiftround
-
-" Folding
-set foldmethod=expr
-set foldexpr=nvim_treesitter#foldexpr()
-set foldcolumn=0
-set foldlevel=10
-
-set nowrap
-set colorcolumn=80
-set scrolloff=8
-set signcolumn=yes
-set encoding=UTF-8
-
-set updatetime=50
 
 " Enabled syntax highlighting
 syntax enable
 filetype plugin indent on
-
-set completeopt=menu,menuone,preview,noselect,noinsert
-
-" Disable mouse
-set mouse=
-
-set cursorline
 
 call plug#begin()
   Plug 'nvim-lua/plenary.nvim'
@@ -153,3 +154,5 @@ require('config.silicon')
 require('config.neotest')
 require('import-cost').setup()
 require('nvim-highlight-colors').setup {}
+
+-- TODO: Set Search highlight
