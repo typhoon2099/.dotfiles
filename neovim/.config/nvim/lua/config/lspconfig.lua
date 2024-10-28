@@ -112,12 +112,7 @@ rt.setup({
 })
 
 -- Ruby
-lspconfig.rubocop.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
-
-lspconfig.solargraph.setup {
+lspconfig.ruby_lsp.setup {
   filetypes = {
     "ruby",
     "eruby",

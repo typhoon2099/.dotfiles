@@ -4,3 +4,5 @@ solargraph-rails
 neovim
 overcommit
 rubocop
+ruby-lsp
+ruby-lsp-rails

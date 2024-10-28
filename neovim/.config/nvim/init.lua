@@ -116,10 +116,11 @@ call plug#end()
 " Colour Options
 colorscheme vim
 colorscheme strawberry-dark
-highlight NonText guibg=none
-highlight! link CmpItemKindDefault Normal
-highlight Normal guibg=none
 ]])
+
+-- Colour Options
+vim.api.nvim_set_hl(0, 'CmpItemKindDefault', { link = 'Normal' })
+vim.api.nvim_set_hl(0, 'Normal', { fg = 'fg', bg = 'none' })
 
 -- Bundler keymaps
 vim.api.nvim_set_keymap('n', '<leader>bi', ':!bundle init<CR>', { noremap = true, silent = false })
