@@ -112,13 +112,10 @@ call plug#begin()
   " Fun
   Plug 'Eandrju/cellular-automaton.nvim'
 call plug#end()
-
-" Colour Options
-colorscheme vim
-colorscheme strawberry-dark
 ]])
 
 -- Colour Options
+vim.cmd.colorscheme 'strawberry-dark'
 vim.api.nvim_set_hl(0, 'CmpItemKindDefault', { link = 'Normal' })
 vim.api.nvim_set_hl(0, 'Normal', { fg = 'fg', bg = 'none' })
 vim.api.nvim_set_hl(0, 'Search', { bg = '#8d2e4d', fg = '#ffffff' })
