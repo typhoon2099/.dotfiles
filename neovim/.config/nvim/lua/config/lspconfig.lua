@@ -67,11 +67,9 @@ local on_attach = function(client, bufnr)
       group = "lsp_document_highlight",
       desc = "Clear All the References",
     })
-    vim.api.nvim_exec([[
-      hi LspReferenceRead cterm=bold guibg=#290d16
-      hi LspReferenceText cterm=bold guibg=#290d16
-      hi LspReferenceWrite cterm=bold guibg=#290d16
-    ]], false)
+    vim.api.nvim_set_hl(0, 'LspReferenceRead', { link = 'Search' })
+    vim.api.nvim_set_hl(0, 'LspReferenceText', { link = 'Search' })
+    vim.api.nvim_set_hl(0, 'LspReferenceWrite', { link = 'Search' })
   end
 end
 

@@ -114,6 +114,8 @@ vim.cmd.colorscheme 'strawberry-dark'
 vim.api.nvim_set_hl(0, 'CmpItemKindDefault', { link = 'Normal' })
 vim.api.nvim_set_hl(0, 'Normal', { fg = 'fg', bg = 'none' })
 vim.api.nvim_set_hl(0, 'Search', { bg = '#8d2e4d', fg = '#ffffff' })
+vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none', fg = 'fg' })
+vim.api.nvim_set_hl(0, 'FloatBorder', { bg = 'none', fg = 'fg' })
 
 -- Bundler keymaps
 vim.api.nvim_set_keymap('n', '<leader>bi', ':!bundle init<CR>', { noremap = true, silent = false })
