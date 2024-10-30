@@ -88,28 +88,22 @@ lspconfig.lua_ls.setup {
   },
 }
 
-local rt = require("rust-tools")
-
-rt.setup({
-  server = {
-    cmd = { "rustup", "run", "stable", "rust-analyzer" },
-    on_attach = on_attach,
-    capabilities = capabilities,
-    settings = {
-      ["rust-analyzer"] = {
-        cargo = {
-          features = "all",
-        },
-        checkOnSave = {
-          command = "clippy",
-        },
-        procMacro = {
-          enable = true,
-        },
+lspconfig.rust_analyzer.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  settings = {
+    ["rust-analyzer"] = {
+      check = {
+        features = 'all',
+        allTargets = true,
+        command = "clippy",
+      },
+      rustfmt = {
+        enableRangeFormatting = true,
       },
     },
-  },
-})
+  }
+}
 
 -- Ruby
 lspconfig.ruby_lsp.setup {

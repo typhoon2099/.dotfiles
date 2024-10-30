@@ -85,11 +85,6 @@ call plug#begin()
   Plug 'hrsh7th/cmp-emoji'
   Plug 'hrsh7th/cmp-nvim-lsp-document-symbol'
 
-  " Rust Stuff
-  Plug 'rust-lang/rust.vim'
-  Plug 'Saecki/crates.nvim'
-  Plug 'simrat39/rust-tools.nvim'
-
   " Colour Stuff
   Plug 'bringsrain/strawberry'
   Plug 'brenoprata10/nvim-highlight-colors'
