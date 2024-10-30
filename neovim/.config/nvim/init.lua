@@ -121,6 +121,7 @@ colorscheme strawberry-dark
 -- Colour Options
 vim.api.nvim_set_hl(0, 'CmpItemKindDefault', { link = 'Normal' })
 vim.api.nvim_set_hl(0, 'Normal', { fg = 'fg', bg = 'none' })
+vim.api.nvim_set_hl(0, 'Search', { bg = '#8d2e4d', fg = '#ffffff' })
 
 -- Bundler keymaps
 vim.api.nvim_set_keymap('n', '<leader>bi', ':!bundle init<CR>', { noremap = true, silent = false })
