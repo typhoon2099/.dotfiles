@@ -57,7 +57,6 @@ call plug#begin()
   Plug 'nvim-lua/lsp-status.nvim'
 
   " Colour Stuff
-  Plug 'bringsrain/strawberry'
   Plug 'brenoprata10/nvim-highlight-colors'
 
   " Terraform Stuff
