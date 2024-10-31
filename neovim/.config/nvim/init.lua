@@ -61,14 +61,6 @@ call plug#begin()
   Plug 'bringsrain/strawberry'
   Plug 'brenoprata10/nvim-highlight-colors'
 
-  " Testing Stuff
-  Plug 'nvim-neotest/neotest'
-  Plug 'nvim-neotest/nvim-nio'
-  Plug 'nvim-neotest/neotest-jest'
-  Plug 'olimorris/neotest-rspec'
-  Plug 'rouge8/neotest-rust'
-  Plug 'antoinemadec/FixCursorHold.nvim'
-
   " Terraform Stuff
   Plug 'hashivim/vim-terraform'
 
@@ -108,7 +100,6 @@ require('config.cellular-automaton')
 require('config.nvim-autopairs')
 require('config.markdown-preview')
 require('config.silicon')
-require('config.neotest')
 require('import-cost').setup()
 require('nvim-highlight-colors').setup {}
 
