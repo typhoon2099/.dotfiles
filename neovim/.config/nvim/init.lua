@@ -55,7 +55,6 @@ call plug#begin()
   Plug 'barrett-ruth/import-cost.nvim', { 'do': 'sh install.sh yarn' }
 
   " LSP
-  Plug 'neovim/nvim-lspconfig'
   Plug 'nvim-lua/lsp-status.nvim'
 
   " Colour Stuff
@@ -106,7 +105,6 @@ vim.opt.undofile = true
 
 require('config.lazy')
 require('config.cellular-automaton')
-require('config.lspconfig')
 require('config.nvim-autopairs')
 require('config.markdown-preview')
 require('config.silicon')
