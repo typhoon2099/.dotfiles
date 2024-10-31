@@ -48,7 +48,6 @@ syntax enable
 filetype plugin indent on
 
 call plug#begin()
-  Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
   Plug 'tpope/vim-commentary'
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
   Plug 'krivahtoo/silicon.nvim', { 'do': './install.sh' }
@@ -117,7 +116,6 @@ require('config.lazy')
 require('config.cellular-automaton')
 require('config.lspconfig')
 require('config.lualine')
-require('config.treesitter')
 require('config.nvim-autopairs')
 require('config.markdown-preview')
 require('config.silicon')
