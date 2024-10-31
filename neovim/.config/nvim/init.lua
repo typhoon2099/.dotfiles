@@ -97,7 +97,6 @@ vim.opt.undofile = true
 
 require('config.lazy')
 require('config.cellular-automaton')
-require('config.nvim-autopairs')
 require('config.markdown-preview')
 require('config.silicon')
 require('import-cost').setup()
