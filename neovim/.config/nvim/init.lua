@@ -137,7 +137,6 @@ vim.opt.undofile = true
 
 require('config.lazy')
 require('config.fugitive')
-require('config.gitsigns')
 require('config.cellular-automaton')
 require('config.cmp')
 require('config.lspconfig')
