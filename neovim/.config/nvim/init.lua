@@ -48,7 +48,6 @@ syntax enable
 filetype plugin indent on
 
 call plug#begin()
-  Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
   Plug 'tpope/vim-commentary'
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
