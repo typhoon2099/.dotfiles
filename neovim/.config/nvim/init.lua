@@ -57,9 +57,6 @@ call plug#begin()
   Plug 'SmiteshP/nvim-navbuddy'
   Plug 'SmiteshP/nvim-navic'
 
-  " Status bar
-  Plug 'nvim-lualine/lualine.nvim'
-
   Plug 'barrett-ruth/import-cost.nvim', { 'do': 'sh install.sh yarn' }
 
   " LSP
@@ -115,7 +112,6 @@ vim.opt.undofile = true
 require('config.lazy')
 require('config.cellular-automaton')
 require('config.lspconfig')
-require('config.lualine')
 require('config.nvim-autopairs')
 require('config.markdown-preview')
 require('config.silicon')
