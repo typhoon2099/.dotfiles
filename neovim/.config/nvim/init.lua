@@ -71,10 +71,6 @@ call plug#begin()
   Plug 'bringsrain/strawberry'
   Plug 'brenoprata10/nvim-highlight-colors'
 
-  " Git Stuff
-  Plug 'lewis6991/gitsigns.nvim'
-  Plug 'tpope/vim-fugitive'
-
   " Testing Stuff
   Plug 'nvim-neotest/neotest'
   Plug 'nvim-neotest/nvim-nio'
@@ -118,7 +114,6 @@ vim.opt.undofile = true
 -- Load configs
 
 require('config.lazy')
-require('config.fugitive')
 require('config.cellular-automaton')
 require('config.lspconfig')
 require('config.lualine')
