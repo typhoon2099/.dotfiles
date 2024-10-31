@@ -56,9 +56,6 @@ call plug#begin()
   " LSP
   Plug 'nvim-lua/lsp-status.nvim'
 
-  " Colour Stuff
-  Plug 'brenoprata10/nvim-highlight-colors'
-
   " Terraform Stuff
   Plug 'hashivim/vim-terraform'
 
@@ -95,6 +92,5 @@ require('config.lazy')
 require('config.markdown-preview')
 require('config.silicon')
 require('import-cost').setup()
-require('nvim-highlight-colors').setup {}
 
 -- TODO: Set Search highlight
