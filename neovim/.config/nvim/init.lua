@@ -135,6 +135,7 @@ vim.opt.undofile = true
 
 -- Load configs
 
+require('config.lazy')
 require('config.fugitive')
 require('config.gitsigns')
 require('config.cellular-automaton')
