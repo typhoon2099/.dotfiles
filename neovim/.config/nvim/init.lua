@@ -62,8 +62,6 @@ call plug#begin()
   " Terraform Stuff
   Plug 'hashivim/vim-terraform'
 
-  " Fun
-  Plug 'Eandrju/cellular-automaton.nvim'
 call plug#end()
 ]])
 
@@ -94,7 +92,6 @@ vim.opt.undofile = true
 -- Load configs
 
 require('config.lazy')
-require('config.cellular-automaton')
 require('config.markdown-preview')
 require('config.silicon')
 require('import-cost').setup()
