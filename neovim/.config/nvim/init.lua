@@ -48,7 +48,6 @@ syntax enable
 filetype plugin indent on
 
 call plug#begin()
-  Plug 'tpope/vim-commentary'
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
   Plug 'krivahtoo/silicon.nvim', { 'do': './install.sh' }
 
