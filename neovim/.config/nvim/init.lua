@@ -64,10 +64,6 @@ call plug#begin()
 
   Plug 'barrett-ruth/import-cost.nvim', { 'do': 'sh install.sh yarn' }
 
-  " Telescope Stuff
-  Plug 'nvim-telescope/telescope.nvim'
-  Plug 'nvim-telescope/telescope-symbols.nvim'
-
   " LSP
   Plug 'neovim/nvim-lspconfig'
   Plug 'nvim-lua/lsp-status.nvim'
@@ -142,7 +138,6 @@ require('config.cmp')
 require('config.lspconfig')
 require('config.lualine')
 require('config.treesitter')
-require('config.telescope')
 require('config.nvim-autopairs')
 require('config.markdown-preview')
 require('config.silicon')
