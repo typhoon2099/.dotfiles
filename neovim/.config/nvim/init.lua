@@ -67,19 +67,6 @@ call plug#begin()
   Plug 'neovim/nvim-lspconfig'
   Plug 'nvim-lua/lsp-status.nvim'
 
-  " Completion Stuff
-  Plug 'hrsh7th/nvim-cmp'
-  Plug 'hrsh7th/cmp-nvim-lsp'
-  Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
-  Plug 'hrsh7th/cmp-path'
-  Plug 'hrsh7th/cmp-buffer'
-  Plug 'hrsh7th/cmp-cmdline'
-  Plug 'hrsh7th/vim-vsnip'
-  Plug 'hrsh7th/cmp-vsnip'
-  Plug 'windwp/nvim-autopairs'
-  Plug 'hrsh7th/cmp-emoji'
-  Plug 'hrsh7th/cmp-nvim-lsp-document-symbol'
-
   " Colour Stuff
   Plug 'bringsrain/strawberry'
   Plug 'brenoprata10/nvim-highlight-colors'
@@ -133,7 +120,6 @@ vim.opt.undofile = true
 require('config.lazy')
 require('config.fugitive')
 require('config.cellular-automaton')
-require('config.cmp')
 require('config.lspconfig')
 require('config.lualine')
 require('config.treesitter')
