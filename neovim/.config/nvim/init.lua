@@ -52,11 +52,6 @@ call plug#begin()
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
   Plug 'krivahtoo/silicon.nvim', { 'do': './install.sh' }
 
-  " LSP Document Symbols
-  Plug 'MunifTanjim/nui.nvim'
-  Plug 'SmiteshP/nvim-navbuddy'
-  Plug 'SmiteshP/nvim-navic'
-
   Plug 'barrett-ruth/import-cost.nvim', { 'do': 'sh install.sh yarn' }
 
   " LSP
