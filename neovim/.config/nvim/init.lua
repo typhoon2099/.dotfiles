@@ -43,13 +43,8 @@ vim.cmd([[
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath=&runtimepath
 
-" Enabled syntax highlighting
-syntax enable
-filetype plugin indent on
-
 call plug#begin()
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
-  Plug 'krivahtoo/silicon.nvim', { 'do': './install.sh' }
 
   Plug 'barrett-ruth/import-cost.nvim', { 'do': 'sh install.sh yarn' }
 
@@ -61,6 +56,8 @@ call plug#begin()
 
 call plug#end()
 ]])
+
+require('config.lazy')
 
 -- Colour Options
 vim.cmd.colorscheme 'strawberry-dark'
@@ -88,9 +85,7 @@ vim.opt.undofile = true
 
 -- Load configs
 
-require('config.lazy')
 require('config.markdown-preview')
-require('config.silicon')
 require('import-cost').setup()
 
 -- TODO: Set Search highlight
