@@ -38,22 +38,6 @@ vim.opt.mouse = ''
 
 vim.opt.cursorline = true
 
-vim.cmd([[
-" Get Vim config
-set runtimepath^=~/.vim runtimepath+=~/.vim/after
-let &packpath=&runtimepath
-
-call plug#begin()
-
-  " LSP
-  Plug 'nvim-lua/lsp-status.nvim'
-
-  " Terraform Stuff
-  Plug 'hashivim/vim-terraform'
-
-call plug#end()
-]])
-
 require('config.lazy')
 
 -- Colour Options
