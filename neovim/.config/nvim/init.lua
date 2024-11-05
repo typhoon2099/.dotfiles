@@ -44,8 +44,6 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath=&runtimepath
 
 call plug#begin()
-  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
-
   Plug 'barrett-ruth/import-cost.nvim', { 'do': 'sh install.sh yarn' }
 
   " LSP
