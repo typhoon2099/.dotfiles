@@ -44,7 +44,6 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath=&runtimepath
 
 call plug#begin()
-  Plug 'barrett-ruth/import-cost.nvim', { 'do': 'sh install.sh yarn' }
 
   " LSP
   Plug 'nvim-lua/lsp-status.nvim'
@@ -80,10 +79,3 @@ vim.keymap.set('n', '<leader>br', function()
 end, { noremap = true, silent = false })
 
 vim.opt.undofile = true
-
--- Load configs
-
-require('config.markdown-preview')
-require('import-cost').setup()
-
--- TODO: Set Search highlight
