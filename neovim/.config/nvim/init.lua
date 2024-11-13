@@ -9,6 +9,7 @@ vim.opt.hlsearch = false
 vim.opt.hidden = true
 vim.opt.swapfile = false
 vim.g.mapleader = ' '
+vim.g.maplocalleader = ','
 
 -- Indentation
 vim.opt.tabstop = 4
