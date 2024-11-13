@@ -6,3 +6,4 @@ overcommit
 rubocop
 ruby-lsp
 ruby-lsp-rails
+ruby-lsp-rspec
