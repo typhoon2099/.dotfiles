@@ -15,10 +15,6 @@ return {
     local on_attach = function(client, bufnr)
       vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
-      if client.name == 'solargraph' then
-        client.server_capabilities.documentFormattingProvider = false
-      end
-
       if client.server_capabilities.inlayHintProvider then
         vim.lsp.inlay_hint.enable(true, { bufnr })
       end
