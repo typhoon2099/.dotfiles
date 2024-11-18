@@ -1,5 +1,6 @@
 return {
   'hrsh7th/nvim-cmp',
+  event = 'InsertEnter',
   dependencies = {
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-nvim-lsp-signature-help',
@@ -11,6 +12,7 @@ return {
     'windwp/nvim-autopairs',
     'hrsh7th/cmp-emoji',
     'hrsh7th/cmp-nvim-lsp-document-symbol',
+    'brenoprata10/nvim-highlight-colors',
   },
   config = function()
     local cmp = require 'cmp'
@@ -45,7 +47,10 @@ return {
         { name = "emoji" },
       }, {
         { name = 'buffer' },
-      })
+      }),
+      formatting = {
+        format = require('nvim-highlight-colors').format,
+      },
     })
 
     -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
