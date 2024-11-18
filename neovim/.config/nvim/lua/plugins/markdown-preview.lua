@@ -1,9 +1,14 @@
 return {
   'iamcco/markdown-preview.nvim',
+  cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+  ft = { "markdown" },
   build = 'cd app && yarn install',
-  config = function()
+  keys = {
+    { '<leader>mm', '<Plug>MarkdownPreviewToggle', desc = 'Toggle Markdown Preview' }
+  },
+  init = function()
     vim.g.mkdp_auto_start = 0
     vim.g.mkdp_auto_close = 0
-    vim.api.nvim_set_keymap('n', '<leader>mm', '<Plug>MarkdownPreviewToggle', { noremap = true, silent = true })
+    vim.g.mkdp_filetypes = { "markdown" }
   end
 }
