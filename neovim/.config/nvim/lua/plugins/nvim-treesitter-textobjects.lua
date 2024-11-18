@@ -1,5 +1,6 @@
 return {
   'nvim-treesitter/nvim-treesitter-textobjects',
+  lazy = true,
   config = function()
     require 'nvim-treesitter.configs'.setup {
       textobjects = {
@@ -18,6 +19,15 @@ return {
           },
           swap_previous = {
             ["<leader>T"] = "@parameter.inner",
+          },
+        },
+        lsp_interop = {
+          enable = true,
+          border = 'none',
+          floating_preview_opts = {},
+          peek_definition_code = {
+            ["<leader>df"] = "@function.outer",
+            ["<leader>dF"] = "@class.outer",
           },
         },
       },
