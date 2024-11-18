@@ -1,6 +1,7 @@
 return {
   'Eandrju/cellular-automaton.nvim',
-  config = function()
-    vim.keymap.set("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>");
-  end,
+  lazy = true,
+  keys = {
+    { '<leader>fml', '<cmd>CellularAutomaton make_it_rain<CR>', desc = 'Make it Rain' },
+  }
 }
