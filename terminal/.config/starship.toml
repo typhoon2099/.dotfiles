@@ -66,6 +66,11 @@ version_format = "${raw}"
 [package]
 format = "[$symbol( $version)]($style)"
 symbol = "Version"
+version_format = "${raw}"
+
+[perl]
+format = "[$symbol( $version)]($style)"
+symbol = "Perl"
 
 [ruby]
 format = "[$symbol( $version)]($style)"
