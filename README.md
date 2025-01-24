@@ -79,7 +79,6 @@ which are manage by Plug Vim.
 * `lua-language-server`
 * `vscode-langservers-extracted`
 * `emmet-ls`
-* `solargraph`
 * `terraformls`
 * `tflint`
 * `fd`
