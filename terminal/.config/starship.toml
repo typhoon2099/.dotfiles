@@ -2,8 +2,7 @@ format = """
 (($git_branch)( $git_commit)( $git_state)( $git_metrics)( $git_status)\n)\
 (($ruby | )($nodejs | )($rust | )($golang | )($terraform | )\
 ($package | )$all\n)\
-$directory\
-$line_break\
+$directory\n\
 $time $character
 """
 right_format = "$cmd_duration"
@@ -55,6 +54,9 @@ staged = "+$count"
 format = "[$symbol( $version)($workspace)]($style)"
 symbol = "Go"
 version_format = "${raw}"
+
+[line_break]
+disabled = true
 
 [nodejs]
 format = "[$symbol( $version)]($style)"
