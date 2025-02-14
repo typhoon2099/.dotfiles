@@ -1,6 +1,7 @@
 # Neovim Stuff
 brew "ripgrep"
 brew "fd"
+brew "taplo"
 
 # Terminal Stuff
 brew "starship"

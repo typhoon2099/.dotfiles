@@ -140,6 +140,11 @@ return {
     -- TODO: Stylelint
     lspconfig.tailwindcss.setup {}
 
+    lspconfig.taplo.setup {
+      on_attach = on_attach,
+      capabilities = capabilities,
+    }
+
     -- Svelte
     lspconfig.svelte.setup {
       on_attach = on_attach,
