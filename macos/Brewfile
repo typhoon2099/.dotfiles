@@ -28,7 +28,7 @@ cask "firefox"
 cask "alacritty"
 cask "chromium"
 cask "keepassxc"
-cask "postman"
+cask "bruno"
 
 # Testing
 brew "ical-buddy"
