@@ -101,7 +101,6 @@ Required software can be installed on Mac using the supplied Brewfile
 * `bash`/`zsh`
 * Starship
 * Mise
-* Direnv
 
 ## tmux
 

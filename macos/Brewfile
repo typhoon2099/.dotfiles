@@ -9,7 +9,6 @@ brew "tmux"
 brew "ranger"
 brew "overmind"
 brew "bat"
-brew "direnv"
 
 # Tmux Stuff
 brew "entr"

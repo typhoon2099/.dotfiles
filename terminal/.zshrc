@@ -67,9 +67,6 @@ autoload -Uz compinit bashcompinit
 compinit
 bashcompinit
 
-# Initialise tools
-eval "$(direnv hook zsh)"
-
 # Initialise Mise cli
 eval "$(mise activate zsh)"
 eval "$(mise completion zsh)"
