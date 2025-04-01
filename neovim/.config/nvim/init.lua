@@ -63,3 +63,10 @@ vim.keymap.set('n', '<leader>br', function()
 end, { noremap = true, silent = false })
 
 vim.opt.undofile = true
+
+
+vim.diagnostic.config({
+  virtual_lines = {
+    current_line = true,
+  },
+})
