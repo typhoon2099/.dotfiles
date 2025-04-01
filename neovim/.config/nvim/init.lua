@@ -25,7 +25,7 @@ vim.opt.foldcolumn = 'auto:3'
 vim.opt.foldlevel = 10
 
 vim.opt.wrap = false
-vim.opt.colorcolumn = '80'
+vim.opt.colorcolumn = '80,120'
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = 'yes'
 vim.opt.encoding = 'UTF-8'
