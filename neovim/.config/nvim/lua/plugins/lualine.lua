@@ -19,7 +19,7 @@ return {
       normal = {
         a = { bg = colors.primary, fg = colors.background, gui = 'bold' },
         b = { bg = colors.secondary, fg = colors.lightpink },
-        c = { bg = "default", fg = colors.primary },
+        c = { fg = colors.primary },
       },
       insert = {
         a = { bg = colors.blue, fg = colors.black, gui = 'bold' },
