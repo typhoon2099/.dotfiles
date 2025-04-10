@@ -3,16 +3,18 @@ return {
   dependencies = { 'nvim-tree/nvim-web-devicons' },
   config = function()
     local colors = {
-      primary      = '#dd95ad',
-      secondary    = '#8d2e4d',
-      black        = '#3f3136',
-      red          = '#de6f6f',
-      green        = '#83de6f',
-      blue         = '#6facde',
-      yellow       = '#decf6f',
-      background   = '#251c1f',
-      lightpink    = '#f1d2dc',
-      white        = '#ffffff',
+      primary    = '#dd95ad',
+      secondary  = '#8d2e4d',
+      black      = '#3f3136',
+      red        = '#de6f6f',
+      green      = '#83de6f',
+      blue       = '#6facde',
+      yellow     = '#decf6f',
+      background = '#251c1f',
+      lightpink  = '#f1d2dc',
+      white      = '#ffffff',
+      grey       = '#c9abb5',
+      darkgrey   = '#412931',
     }
 
     local theme = {
@@ -34,29 +36,34 @@ return {
         a = { bg = colors.green, fg = colors.black, gui = 'bold' },
       },
       inactive = {
-        a = { bg = colors.background, fg = colors.primary, gui = 'bold' },
+        a = { bg = colors.grey, fg = colors.black, gui = 'bold' },
+        b = { bg = colors.darkgrey, fg = colors.lightpink },
+        c = { fg = colors.grey },
       }
+    }
+
+    local sections = {
+      lualine_b = {
+        'branch',
+        {
+          'diff',
+          colored = false,
+        }
+      },
+      lualine_c = {
+        'filename',
+      },
+      lualine_x = { 'diagnostics' },
+      lualine_y = { 'encoding', 'fileformat', 'filetype' },
+      lualine_z = { 'location' }
     }
 
     require("lualine").setup({
       options = {
         theme = theme,
       },
-      sections = {
-        lualine_b = {
-          'branch',
-          {
-            'diff',
-            colored = false,
-          }
-        },
-        lualine_c = {
-          'filename',
-        },
-        lualine_x = { 'diagnostics' },
-        lualine_y = { 'encoding', 'fileformat', 'filetype' },
-        lualine_z = { 'location' }
-      },
+      sections = sections,
+      inactive_sections = sections,
     })
   end,
 }
