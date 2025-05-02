@@ -72,3 +72,6 @@ vim.diagnostic.config({
     current_line = true,
   },
 })
+
+
+vim.o.winborder = "rounded"
