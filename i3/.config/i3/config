@@ -22,9 +22,6 @@ exec --no-startup-id blueman-applet
 # pCloud
 exec --no-startup-id ~/Applications/pcloud_6eaa63aec2f4e2bbd75300ceaa21a3c2
 
-# KDE Connect
-exec --no-startup-id kdeconnect-indicator
-
 # Dunst (for notifications)
 exec --no-startup-id dunst
 
