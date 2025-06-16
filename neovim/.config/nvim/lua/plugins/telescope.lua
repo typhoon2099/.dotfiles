@@ -23,8 +23,6 @@ return {
     vim.keymap.set('n', '<leader>gg', builtin.builtin, {})
     vim.keymap.set('n', '<leader>gr', builtin.registers, {})
 
-    vim.keymap.set('n', '<leader>grr', builtin.lsp_references, {})
-
     vim.keymap.set('n', '<leader>ee', builtin.symbols, {})
   end,
   opts = {
