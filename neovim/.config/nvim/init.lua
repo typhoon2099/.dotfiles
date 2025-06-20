@@ -42,15 +42,24 @@ vim.opt.cursorline = true
 require('config.lazy')
 
 -- Colour Options
+
+local colours = {
+  high = '#dd95ad',
+  medium = '#8d2e4d',
+  low = '#251c1f',
+  white = '#ffffff',
+}
 vim.cmd.colorscheme 'strawberry-dark'
-vim.api.nvim_set_hl(0, 'CmpItemKindDefault', { link = 'Normal' })
-vim.api.nvim_set_hl(0, 'Normal', { fg = 'fg', bg = 'none' })
-vim.api.nvim_set_hl(0, 'Search', { bg = '#8d2e4d', fg = '#ffffff' })
-vim.api.nvim_set_hl(0, 'FloatBorder', { bg = 'none', fg = 'fg' })
+vim.api.nvim_set_hl(0, 'Search', { bg = colours.medium, fg = colours.white })
+
+vim.api.nvim_set_hl(0, 'NormalFloat', { link = 'Normal' })
 vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'none', fg = 'fg' })
 vim.api.nvim_set_hl(0, 'StatusLineNC', { link = 'StatusLine' })
 
--- Bundler keymaps
+vim.api.nvim_set_hl(0, 'Pmenu', { bg = colours.low })
+vim.api.nvim_set_hl(0, 'PmenuSel', { bg = colours.medium })
+vim.api.nvim_set_hl(0, 'PmenuThumb', { bg = colours.medium, fg = colours.high })
+
 vim.api.nvim_set_keymap('n', '<leader>bi', ':!bundle init<CR>', { noremap = true, silent = false })
 vim.api.nvim_set_keymap('n', '<leader>bb', ':!bundle install<CR>', { noremap = true, silent = false })
 vim.keymap.set('n', '<leader>ba', function()
