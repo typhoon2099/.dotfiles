@@ -26,6 +26,9 @@ return {
     vim.keymap.set('n', '<leader>ee', builtin.symbols, {})
   end,
   opts = {
+    defaults = {
+      border = false,
+    },
     pickers = {
       find_files = {
         hidden = true,
