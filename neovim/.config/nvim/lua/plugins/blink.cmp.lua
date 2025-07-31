@@ -41,9 +41,13 @@ return {
       },
       list = {
         selection = {
-          preselect = true,
+          preselect = false,
           auto_insert = true,
         },
+      },
+      trigger = {
+        show_on_backspace_in_keyword = true,
+        show_on_insert = true,
       },
       menu = {
         border = 'rounded',
