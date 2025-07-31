@@ -39,6 +39,9 @@ return {
       ghost_text = {
         enabled = true,
       },
+      keyword = {
+        range = 'full',
+      },
       list = {
         selection = {
           preselect = false,
