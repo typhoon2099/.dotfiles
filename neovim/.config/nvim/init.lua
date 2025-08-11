@@ -150,7 +150,6 @@ vim.lsp.enable({
   'ruby_lsp',
   'biome',
   'cssls',
-  'eslint',
   'stylelint_lsp',
   'html',
   'emmet_ls',

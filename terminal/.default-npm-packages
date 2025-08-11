@@ -7,5 +7,4 @@ yaml-language-server
 tailwindcss-language-server
 tree-sitter-cli
 neovim
-eslint
 @biomejs/biome
