@@ -84,3 +84,83 @@ vim.diagnostic.config({
 
 
 vim.o.winborder = "rounded"
+
+vim.api.nvim_create_autocmd('LspAttach', {
+  callback = function(args)
+    local client = vim.lsp.get_client_by_id(args.data.client_id)
+    -- vim.api.nvim_set_option_value('omnifunc', 'v:lua.vim.lsp.omnifunc', { buf = args.buf})
+
+    if client.server_capabilities.inlayHintProvider then
+      vim.lsp.inlay_hint.enable(true, { args.buf })
+    end
+
+    if client.server_capabilities.documentHighlightProvider then
+      vim.api.nvim_create_augroup("lsp_document_highlight", { clear = true })
+      vim.api.nvim_clear_autocmds { buffer = args.buf, group = "lsp_document_highlight" }
+      vim.api.nvim_create_autocmd("CursorHold", {
+        callback = vim.lsp.buf.document_highlight,
+        buffer = args.buf,
+        group = "lsp_document_highlight",
+        desc = "Document Highlight",
+      })
+      vim.api.nvim_create_autocmd("CursorMoved", {
+        callback = vim.lsp.buf.clear_references,
+        buffer = args.buf,
+        group = "lsp_document_highlight",
+        desc = "Clear All the References",
+      })
+      vim.api.nvim_set_hl(0, 'LspReferenceRead', { link = 'Search' })
+      vim.api.nvim_set_hl(0, 'LspReferenceText', { link = 'Search' })
+      vim.api.nvim_set_hl(0, 'LspReferenceWrite', { link = 'Search' })
+    end
+
+    local opts = { noremap = true, silent = true, buffer = args.buf }
+
+    vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, opts)
+    vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, opts)
+    vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
+    vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
+    vim.keymap.set('n', 'ga', vim.lsp.buf.code_action, opts)
+    vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
+    vim.keymap.set('n', '<C-s>', vim.lsp.buf.signature_help, opts)
+    vim.keymap.set('n', '<leader>wa', vim.lsp.buf.add_workspace_folder, opts)
+    vim.keymap.set('n', '<leader>wr', vim.lsp.buf.remove_workspace_folder, opts)
+    vim.keymap.set('n', '<leader>wl', function()
+      print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
+    end, opts)
+    vim.keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, opts)
+    vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
+    vim.keymap.set('n', 'grr', function()
+      require('telescope.builtin').lsp_references();
+    end, opts)
+
+    vim.keymap.set({ 'n', 'v' }, 'ff', function() vim.lsp.buf.format { async = true } end, opts)
+    vim.keymap.set('n', '<leader>cl', function() vim.lsp.codelens.run() end, opts)
+  end,
+})
+
+vim.lsp.config('*', {
+  root_markers = {
+    '.git',
+  },
+})
+
+vim.lsp.enable({
+  'lua_ls',
+  'ruby_lsp',
+  'biome',
+  'cssls',
+  'eslint',
+  'stylelint_lsp',
+  'html',
+  'emmet_ls',
+  'ts_ls',
+  'jsonls',
+  'rust_analyzer',
+  'tailwindcss',
+  'taplo',
+  'svelte',
+  'terraformls',
+  'tflint',
+  'yamlls',
+})
