@@ -1,4 +1,4 @@
-cons_format = "{icon}"
+icons_format = "{icon}"
 
 [theme]
 theme = "solarized-dark"
@@ -18,12 +18,14 @@ critical_fg = "#251c1f"
 info_bg = "#251c1f"
 info_fg = "#dd95ad"
 
+separator = "\ue0ba"
+
 [icons]
-icons = "awesome4"
+icons = "material-nf"
 
 [[block]]
 block = "music"
-format = " $icon {$combo.str(max_w:25,rot_interval:0.5) $prev $play $next |}"
+format = " $icon {$combo.str(max_w:50,rot_interval:0.5) $prev $play $next |}"
 
 [[block]]
 block = "cpu"
@@ -39,15 +41,21 @@ button = "left"
 cmd = "pavucontrol"
 
 [[block]]
+block = "disk_space"
+info_type = "available"
+alert_unit = "GB"
+format = " $icon $available "
+format_alt = " $icon $available / $total ($percentage)"
+[[block.click]]
+button = "right"
+update = true
+
+[[block]]
 block = "battery"
 format = " $icon $percentage ($time)"
 full_format = " $icon $percentage"
 
 [[block]]
-block = "kdeconnect"
-
-[[block]]
 block = "time"
 interval = 1
 format = " $timestamp.datetime(f:'%F %H:%M:%S') "
-

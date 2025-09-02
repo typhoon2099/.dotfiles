@@ -1,15 +1,7 @@
 set $mod Mod4
 
-# Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
 font pango:monospace 12
-
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
 font pango:Hack 11
-
-# Start Compositor
-exec_always --no-startup-id picom -b --experimental-backends
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
@@ -197,8 +189,9 @@ set $orange #de844b
 bar {
   status_command ~/.cargo/bin/i3status-rs
   position top
-  font pango:Hack Nerd Font Mono 12
+  font pango:Hack Nerd Font Mono, FontAwesome 12
   binding_mode_indicator yes
+  padding -3px
   colors {
     background $black
 
