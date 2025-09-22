@@ -1,6 +1,7 @@
 configuration {
   modi: "window,run,drun";
   font: "Hack Nerd Font Mono 14";
+  show-icons: true;
   timeout {
     action: "kb-cancel";
     delay:  0;

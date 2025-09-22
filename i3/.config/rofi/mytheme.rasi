@@ -21,10 +21,19 @@ entry {
   text-color: @pink;
 }
 
+message {
+  text-color: @pink;
+  padding: 5px;
+  spacing: 5px;
+}
+
+textbox {
+  text-color: @pink;
+}
+
 element {
   padding: 5px;
   spacing: 5px;
-  children: [element-icon, element-text];
 }
 
 element selected {
