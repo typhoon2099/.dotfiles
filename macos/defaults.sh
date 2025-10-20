@@ -27,6 +27,7 @@ defaults write -g AppleMenuBarVisibleInFullscreen -bool false
 
 # Finder
 defaults write -g AppleShowAllExtensions -bool true
+defaults write com.apple.finder NSUserKeyEquivalents -dict-add 'Move to Bin' '@\U007F'
 
 # Disable text corrections
 defaults write -g NSAutomaticCapitalizationEnabled -bool false
