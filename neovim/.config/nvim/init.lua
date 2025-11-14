@@ -151,6 +151,7 @@ vim.lsp.enable({
   'ruby_lsp',
   'biome',
   'cssls',
+  'herb_ls',
   'stylelint_lsp',
   'html',
   'emmet_ls',

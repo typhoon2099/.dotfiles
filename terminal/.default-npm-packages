@@ -8,3 +8,4 @@ tailwindcss-language-server
 tree-sitter-cli
 neovim
 @biomejs/biome
+@herb-tools/language-server
