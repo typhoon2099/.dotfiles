@@ -29,6 +29,12 @@ defaults write -g AppleMenuBarVisibleInFullscreen -bool false
 defaults write -g AppleShowAllExtensions -bool true
 defaults write com.apple.finder NSUserKeyEquivalents -dict-add 'Move to Bin' '@\U007F'
 
+# non-Apple display font smoothing
+defaults write NSGlobalDomain AppleFontSmoothing -int 1
+
+# Mail
+defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
+
 # Disable text corrections
 defaults write -g NSAutomaticCapitalizationEnabled -bool false
 defaults write -g NSAutomaticDashSubstitutionEnabled -bool false
