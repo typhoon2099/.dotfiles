@@ -43,6 +43,7 @@
 [alias]
   tidyup = "!git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
   l = "log --oneline --graph"
+  b = "blame -w -C -C -C"
 
 [include]
   path = ./.local.gitconfig
