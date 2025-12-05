@@ -3,3 +3,4 @@
 definitions.rb
 .mise.toml
 yarn-error.log
+.DS_Store
