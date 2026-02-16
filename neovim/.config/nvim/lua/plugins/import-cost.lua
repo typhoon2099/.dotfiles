@@ -4,6 +4,10 @@ return {
     'javascript',
     'javascriptreact'
   },
-  build = 'sh install.sh yarn',
-  config = true,
+  config = false,
+  init = function()
+    vim.g.import_cost = {
+      package_manager = 'yarn',
+    }
+  end,
 }
