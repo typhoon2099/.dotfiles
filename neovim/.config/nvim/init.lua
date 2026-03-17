@@ -60,6 +60,8 @@ vim.api.nvim_set_hl(0, 'Pmenu', { bg = colours.low })
 vim.api.nvim_set_hl(0, 'PmenuSel', { bg = colours.medium })
 vim.api.nvim_set_hl(0, 'PmenuThumb', { bg = colours.medium, fg = colours.high })
 
+vim.api.nvim_set_hl(0, 'TreesitterContext', { bg = '#280d16' })
+
 vim.api.nvim_set_keymap('n', '<leader>bi', ':!bundle init<CR>', { noremap = true, silent = false })
 vim.api.nvim_set_keymap('n', '<leader>bb', ':!bundle install<CR>', { noremap = true, silent = false })
 vim.keymap.set('n', '<leader>ba', function()

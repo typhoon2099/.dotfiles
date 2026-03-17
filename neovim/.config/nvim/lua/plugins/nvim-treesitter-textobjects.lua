@@ -1,36 +1,39 @@
 return {
   'nvim-treesitter/nvim-treesitter-textobjects',
-  lazy = true,
-  init = function()
-    require 'nvim-treesitter.configs'.setup {
-      textobjects = {
-        select = {
-          enable = true,
-          lookahead = true,
-          keymaps = {
-            ['af'] = '@function.outer',
-            ['if'] = '@function.inner',
-          },
-        },
-        swap = {
-          enable = true,
-          swap_next = {
-            ["<leader>t"] = "@parameter.inner",
-          },
-          swap_previous = {
-            ["<leader>T"] = "@parameter.inner",
-          },
-        },
-        lsp_interop = {
-          enable = true,
-          border = 'none',
-          floating_preview_opts = {},
-          peek_definition_code = {
-            ["<leader>df"] = "@function.outer",
-            ["<leader>dF"] = "@class.outer",
-          },
-        },
+  branch = 'main',
+  opts = {
+    select = {
+      enable = true,
+      lookahead = true,
+      selection_modes = {
+        ['@parameter.outer'] = 'v',
+        ['@function.outer'] = 'V',
       },
-    }
+    },
+  },
+  init = function()
+    vim.keymap.set({ "x", "o" }, "af", function()
+      require "nvim-treesitter-textobjects.select".select_textobject("@function.outer", "textobjects")
+    end)
+
+    vim.keymap.set({ "x", "o" }, "if", function()
+      require "nvim-treesitter-textobjects.select".select_textobject("@function.inner", "textobjects")
+    end)
+
+    vim.keymap.set({ "x", "o" }, "ac", function()
+      require "nvim-treesitter-textobjects.select".select_textobject("@class.outer", "textobjects")
+    end)
+
+    vim.keymap.set({ "x", "o" }, "ic", function()
+      require "nvim-treesitter-textobjects.select".select_textobject("@class.inner", "textobjects")
+    end)
+
+    vim.keymap.set("n", "<leader>a", function()
+      require("nvim-treesitter-textobjects.swap").swap_next "@parameter.inner"
+    end)
+
+    vim.keymap.set("n", "<leader>A", function()
+      require("nvim-treesitter-textobjects.swap").swap_previous "@parameter.outer"
+    end)
   end,
 }
