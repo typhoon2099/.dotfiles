@@ -2,3 +2,4 @@ ansible
 pipenv
 neovim
 tox
+comictagger[GUI]
