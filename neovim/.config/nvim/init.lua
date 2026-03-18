@@ -19,8 +19,6 @@ vim.opt.smartindent = true
 vim.opt.shiftround = true
 
 -- Folding
-vim.opt.foldmethod = 'expr'
-vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
 vim.opt.foldcolumn = 'auto:3'
 vim.opt.foldlevel = 10
 

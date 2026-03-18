@@ -3,8 +3,21 @@ return {
   branch = 'main',
   lazy   = false,
   build  = ':TSUpdate',
-  opts   = {
-    ensure_installed = {
+  init   = function()
+    require('nvim-treesitter').install({
+      "bash",
+      "dockerfile",
+      "html",
+      "json",
+      "jsx",
+      "markdown",
+      "python",
+      "scss",
+      "sql",
+      "typescript",
+      "vim",
+      "xml",
+      "yaml",
       "ruby",
       "lua",
       "rust",
@@ -12,15 +25,38 @@ return {
       "html",
       "css",
       "svelte",
-      "monkeyc",
-    },
-    sync_install = false,
-    auto_install = true,
-    highlight = {
-      enable = true,
-    },
-    indent = {
-      enable = true,
-    },
-  }
+      "embedded_template",
+    })
+
+    vim.api.nvim_create_autocmd("Filetype", {
+      pattern = {
+        "bash",
+        "dockerfile",
+        "html",
+        "json",
+        "javascriptreact",
+        "markdown",
+        "python",
+        "scss",
+        "sql",
+        "typescript",
+        "vim",
+        "xml",
+        "yaml",
+        "ruby",
+        "lua",
+        "rust",
+        "javascript",
+        "html",
+        "css",
+        "svelte",
+        "eruby",
+      },
+      callback = function()
+        vim.treesitter.start()
+        vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+        vim.opt.foldmethod = 'expr'
+      end,
+    })
+  end
 }

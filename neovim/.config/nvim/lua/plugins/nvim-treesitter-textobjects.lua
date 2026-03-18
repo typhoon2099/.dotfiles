@@ -3,12 +3,10 @@ return {
   branch = 'main',
   opts = {
     select = {
-      enable = true,
       lookahead = true,
-      selection_modes = {
-        ['@parameter.outer'] = 'v',
-        ['@function.outer'] = 'V',
-      },
+    },
+    move = {
+      set_jumps = true,
     },
   },
   init = function()
