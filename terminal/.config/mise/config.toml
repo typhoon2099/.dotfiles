@@ -10,3 +10,6 @@ lua-language-server = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["ruby", "node"]
+
+[settings.ruby]
+compile = false
