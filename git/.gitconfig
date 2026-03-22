@@ -42,7 +42,10 @@
   guessRemote = true
 
 [alias]
-  tidyup = "!git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
+  upstreamMerged = "!git branch --merged origin/HEAD | grep -E -v '^\\*'"
+  tidyup = "!git upstreammerged | xargs -n 1 git branch -d"
+  tidyWorktrees = "!git upstreammerged | grep -E '^\\+' | sed 's/\\+ //' | xargs -n 1 git worktree remove"
+  gone = ! "git fetch -p && git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D"
   l = "log --oneline --graph"
   b = "blame -w -C -C -C"
 
