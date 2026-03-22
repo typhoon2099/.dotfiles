@@ -135,7 +135,10 @@ vim.api.nvim_create_autocmd('LspAttach', {
       require('telescope.builtin').lsp_references();
     end, opts)
 
-    vim.keymap.set({ 'n', 'v' }, 'ff', function() vim.lsp.buf.format { async = true } end, opts)
+    vim.keymap.set({ 'n', 'v' }, 'ff', function() vim.lsp.buf.format {
+      async = true,
+      filter = function(c) return c.name ~= "ts_ls" end,
+    } end, opts)
     vim.keymap.set('n', '<leader>cl', function() vim.lsp.codelens.run() end, opts)
   end,
 })
